@@ -1,0 +1,27 @@
+.tours {
+    margin-top: 60px;
+    position: relative;
+
+    &__header {
+        font-size: 40px;
+        font-weight: 500;
+        color: $black-color;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &__desc {
+        font-size: 18px;
+        color: $black-color;
+        text-align: center;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 2px;
+            background-color: $green-primary;
+            bottom: 0px;
+            left: 0;
+            transform: translateX(100%);
+        }
+    }
+}
