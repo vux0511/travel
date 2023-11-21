@@ -404,3 +404,12 @@ nav {
     text-overflow: ellipsis;
     word-break: break-word;
 }
+
+@media screen and (max-width: 970px) {
+    .wrapper__top {
+        display: none;
+    }
+    nav .wrapper {
+        justify-content: flex-end;
+    }
+}
