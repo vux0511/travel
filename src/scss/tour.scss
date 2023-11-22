@@ -3,25 +3,26 @@
     position: relative;
 
     &__header {
-        font-size: 40px;
-        font-weight: 500;
+        font-size: 38px;
+        // font-weight: 500;
         color: $black-color;
         text-align: center;
         margin-top: 20px;
-        &::after {
-            content: "";
-            position: absolute;
-            width: 140px;
-            height: 1px;
-            background-color: $green-primary;
-            bottom: -20px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
+        // &::after {
+        //     content: "";
+        //     position: absolute;
+        //     width: 140px;
+        //     height: 1.5px;
+        //     background-color: $yellow-color;
+        //     bottom: -20px;
+        //     left: 50%;
+        //     transform: translateX(-50%);
+        //     border-radius: 4px;
+        // }
     }
     &__desc {
         font-size: 16px;
-        color: $gray-color;
+        color: $yellow-color;
         text-align: center;
     }
     &__wrapper {

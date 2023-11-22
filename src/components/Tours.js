@@ -1,6 +1,7 @@
 import ToursCard from "./TourCard";
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -13,7 +14,7 @@ function Tours({ title, desc }) {
         <div className="container">
             <div className="tours">
                 <div className="tours__desc">{desc}</div>
-                <div className="tours__header">{title}</div>
+                <div className="tours__header line">{title}</div>
                 <div className="tours__wrapper"></div>
             </div>
             <Swiper
@@ -61,6 +62,9 @@ function Tours({ title, desc }) {
                     <ToursCard />
                 </SwiperSlide>
             </Swiper>
+            <button className="button button-primary">
+                Xem Thêm <FaArrowRightLong />
+            </button>
         </div>
     );
 }

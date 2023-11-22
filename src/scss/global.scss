@@ -23,3 +23,44 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    color: $white-color;
+    background-color: $yellow-color;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    line-height: 16px;
+    cursor: pointer;
+    padding: 16px 27px;
+    font-family: $font-primary;
+    transition: all 0.25s ease-in-out;
+    border-radius: 2px;
+
+    &:hover {
+        opacity: 0.8;
+    }
+    &-primary {
+        margin: 0 auto;
+        margin-bottom: 70px;
+    }
+}
+
+.line {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 140px;
+        height: 1.5px;
+        background-color: $yellow-color;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 4px;
+    }
+}
