@@ -7,21 +7,24 @@
         font-weight: 500;
         color: $black-color;
         text-align: center;
-        margin-bottom: 20px;
-    }
-    &__desc {
-        font-size: 18px;
-        color: $black-color;
-        text-align: center;
+        margin-top: 20px;
         &::after {
             content: "";
             position: absolute;
-            width: 100px;
-            height: 2px;
+            width: 140px;
+            height: 1px;
             background-color: $green-primary;
-            bottom: 0px;
-            left: 0;
-            transform: translateX(100%);
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
         }
+    }
+    &__desc {
+        font-size: 16px;
+        color: $gray-color;
+        text-align: center;
+    }
+    &__wrapper {
+        margin-top: 60px;
     }
 }

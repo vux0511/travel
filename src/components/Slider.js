@@ -11,7 +11,6 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 
 function Slider() {
-    const [thumbsSwiper, setThumbsSwiper] = useState(null);
     return (
         <>
             <Swiper

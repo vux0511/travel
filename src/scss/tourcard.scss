@@ -1,0 +1,87 @@
+.tourcard {
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #f6f8fb;
+    line-height: 28px;
+    cursor: pointer;
+    &__image {
+        width: 100%;
+        height: 270px;
+        object-fit: cover;
+    }
+    &__name {
+        padding: 0 20px;
+        font-weight: 500;
+        padding-top: 10px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+        text-decoration: none;
+        color: $black-color;
+    }
+    &__location {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 30px;
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+    &__time {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    &__rating {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    &__bottom {
+        // border-top: 1px solid $white-color;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin-bottom: 16px;
+    }
+    &__icon {
+        color: #dea000;
+        font-size: 17px;
+        &-more {
+            margin-top: 5px;
+        }
+    }
+    &__total {
+        color: #dea000;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    &__more {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        text-decoration: none;
+        color: $black-color;
+    }
+}
+
+.swiper-container {
+    width: 480px;
+}
+
+@media screen and (min-width: 640px) {
+    .swiper-container {
+        width: 640px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .swiper-container {
+        width: 768px;
+    }
+}
