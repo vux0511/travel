@@ -7,8 +7,9 @@ import Steps from "../components/Steps";
 import Introduce from "../components/Introduce";
 import Total from "../components/Total";
 import ChooseUs from "../components/ChooseUs";
-import Team from "../components/Team";
+import Brand from "../components/Brand";
 import Contact from "../components/Contact";
+import Vision from "../components/Vision";
 
 function Home() {
     return (
@@ -28,9 +29,10 @@ function Home() {
             />
             <Steps />
             <Introduce />
-            <Total />
+            {/* <Total /> */}
             <ChooseUs />
-            <Team />
+            <Vision />
+            <Brand />
             {/* <Contact /> */}
             <Footer />
         </>

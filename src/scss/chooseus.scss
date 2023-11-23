@@ -23,7 +23,7 @@
         align-items: center;
         flex-direction: column;
         gap: 20px;
-        width: calc(100% / 3 - 30px);
+        width: calc(100% / 3 - 20px);
         text-align: center;
         background-color: $white-color;
         border-radius: 4px;
@@ -33,9 +33,9 @@
     &__icon {
         color: #ffefc5;
         border-radius: 100rem;
-        width: 75px;
-        height: 75px;
-        padding: 15px;
+        width: 60px;
+        height: 60px;
+        padding: 13px;
         background-color: $yellow-color;
         transition: all 0.25s linear;
         &:hover {
@@ -47,7 +47,7 @@
     &__title {
         font-weight: 400;
         color: $yellow-color;
-        font-size: 18px;
+        font-size: 17px;
         line-height: 35px;
     }
     &__desc {

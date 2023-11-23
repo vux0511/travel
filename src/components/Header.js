@@ -1,20 +1,30 @@
 import { FiPhoneCall, FiMail, FiSearch, FiMenu } from "react-icons/fi";
 import { MdOutlineClear } from "react-icons/md";
-import Logo from "../assets/logo.png";
+import LogoLeft from "../assets/logo-left.png";
+import LogoMain from "../assets/logo-main.jpeg";
 
 function Header() {
     return (
         <nav>
             <div className="header wrapper__top">
                 <div className="header__top">
-                    <div className="header__phone">
-                        <FiPhoneCall />
-                        <p>0842 88 0123</p>
-                    </div>
-                    <img src={Logo} alt="" className="header__logo" />
-                    <div className="header__email">
-                        <FiMail />
-                        <p>vux.0511@gmail.com</p>
+                    <img
+                        src={LogoLeft}
+                        alt="LogoLeft"
+                        className="header__logo-left"
+                    />
+                    <img
+                        src={LogoMain}
+                        alt="LogoMain"
+                        className="header__logo-main"
+                    />
+                    <div className="header__contact">
+                        <div className="header__contact-phone">
+                            <FiPhoneCall /> 0914134626
+                        </div>
+                        <div className="header__contact-email">
+                            <FiMail /> sales@dingding.vn
+                        </div>
                     </div>
                 </div>
             </div>
@@ -30,6 +40,12 @@ function Header() {
                             <a href="#">Home</a>
                         </li>
                         <li>
+                            <a href="#">Tour Trong Nước</a>
+                        </li>
+                        <li>
+                            <a href="#">Tour Nước Ngoài</a>
+                        </li>
+                        {/* <li>
                             <a href="#" className="desktop-item">
                                 Tour Trong Nước
                             </a>
@@ -53,7 +69,7 @@ function Header() {
                                     <a href="#">Tour Ba Bể - Bản Giốc</a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> */}
                         {/* <li>
                             <a href="#" className="desktop-item">
                                 Tour Trong Nước
@@ -129,7 +145,7 @@ function Header() {
                                 </div>
                             </div>
                         </li> */}
-                        <li>
+                        {/* <li>
                             <a href="#" className="desktop-item">
                                 Tour Nước Ngoài
                             </a>
@@ -151,18 +167,29 @@ function Header() {
                                     <a href="#">Drop menu 4</a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> */}
                         <li>
                             <a href="#">Fieldtrip</a>
                         </li>
                         <li>
-                            <a href="#">Teambuilding</a>
+                            <a href="#">TEAMBUILDING & EVENTS</a>
                         </li>
                         <li>
-                            <a href="#">Sinh Viên Quốc Tế</a>
-                        </li>
-                        <li>
-                            <a href="#">Dịch Vụ Khác</a>
+                            <a href="#" className="desktop-item">
+                                Về Chúng tôi
+                            </a>
+                            <input type="checkbox" id="showDrop" />
+                            <label htmlFor="showDrop" className="mobile-item">
+                                Dropdown Menu
+                            </label>
+                            <ul className="drop-menu">
+                                <li>
+                                    <a href="#">Dịch Vụ Visa</a>
+                                </li>
+                                <li>
+                                    <a href="#">Giới thiệu công ty</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#">

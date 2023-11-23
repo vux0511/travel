@@ -24,12 +24,12 @@ function Slider() {
             >
                 <SwiperSlide>
                     <div class="slide swiper-slide">
-                        <img src={Banner1} alt="" class="slider__image" />
+                        <img src={Banner2} alt="" class="slider__image" />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div class="slide swiper-slide">
-                        <img src={Banner2} alt="" class="slider__image" />
+                        <img src={Banner1} alt="" class="slider__image" />
                     </div>
                 </SwiperSlide>
             </Swiper>

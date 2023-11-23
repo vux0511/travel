@@ -18,11 +18,9 @@ function ChooseUs() {
                 <div className="chooseus__wrapper">
                     <div className="chooseus__item">
                         <IoIosStarOutline className="chooseus__icon" />
-                        <div className="chooseus__title">
-                            20 NĂM KINH NGHIỆM
-                        </div>
+                        <div className="chooseus__title">8 NĂM KINH NGHIỆM</div>
                         <div className="chooseus__desc">
-                            Chúng tôi có 20 năm kinh nghiệm trong lĩnh vực du
+                            Chúng tôi có 8 năm kinh nghiệm trong lĩnh vực du
                             lịch sang trọng trong nước và quốc tế.
                         </div>
                     </div>
