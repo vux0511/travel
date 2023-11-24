@@ -169,7 +169,23 @@ function Header() {
                             </ul>
                         </li> */}
                         <li>
-                            <a href="#">Fieldtrip</a>
+                            <a href="#" className="desktop-item">
+                                Tour fieltrip & TNSV
+                            </a>
+                            <input type="checkbox" id="showDrop" />
+                            <label htmlFor="showDrop" className="mobile-item">
+                                Dropdown Menu
+                            </label>
+                            <ul className="drop-menu">
+                                <li>
+                                    <a href="#">
+                                        Kiến tập trải nghiệm Sinh viên
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Sinh Viên quốc té</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#">TEAMBUILDING & EVENTS</a>
@@ -187,15 +203,21 @@ function Header() {
                                     <a href="#">Dịch Vụ Visa</a>
                                 </li>
                                 <li>
-                                    <a href="#">Giới thiệu công ty</a>
+                                    <a href="#">Hồ sơ năng lực</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cung ứng dịch vụ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Giới thiệu</a>
                                 </li>
                             </ul>
                         </li>
-                        <li>
+                        {/* <li>
                             <a href="#">
                                 <FiSearch />
                             </a>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
 

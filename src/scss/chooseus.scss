@@ -31,22 +31,22 @@
         margin-bottom: 50px;
     }
     &__icon {
-        color: #ffefc5;
+        color: $white-color;
         border-radius: 100rem;
         width: 60px;
         height: 60px;
         padding: 13px;
-        background-color: $yellow-color;
+        background-color: $green-color;
         transition: all 0.25s linear;
         &:hover {
-            background-color: #ffefc5;
-            color: $yellow-color;
+            background-color: $white-color;
+            color: $green-color;
             transform: scale(0.9);
         }
     }
     &__title {
         font-weight: 400;
-        color: $yellow-color;
+        color: $green-color;
         font-size: 17px;
         line-height: 35px;
     }

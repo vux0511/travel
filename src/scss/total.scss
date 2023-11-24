@@ -15,7 +15,7 @@
         gap: 15px;
     }
     &__icon {
-        color: $yellow-color;
+        color: $green-color;
         border-radius: 100rem;
         width: 75px;
         height: 75px;
@@ -23,7 +23,7 @@
         background-color: #ffefc5;
         transition: all 0.25s linear;
         &:hover {
-            background-color: $yellow-color;
+            background-color: $green-color;
             color: #ffefc5;
         }
     }
@@ -33,7 +33,7 @@
         gap: 10px;
     }
     &__data {
-        color: $yellow-color;
+        color: $green-color;
         font-size: 35px;
         font-weight: 300;
         line-height: 35px;

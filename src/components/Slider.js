@@ -24,12 +24,38 @@ function Slider() {
             >
                 <SwiperSlide>
                     <div class="slide swiper-slide">
-                        <img src={Banner2} alt="" class="slider__image" />
+                        <img
+                            src="https://vietnamnomad.com/wp-content/uploads/2019/04/Da-Nang-travel-by-Vietnamnomad.jpg"
+                            alt="Slider Image"
+                            class="slider__image"
+                        />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div class="slide swiper-slide">
-                        <img src={Banner1} alt="" class="slider__image" />
+                        <img
+                            src="https://www.originvietnam.com/wp-content/uploads/Danang_Travel_Guide_Header.jpg"
+                            alt="Slider Image"
+                            class="slider__image"
+                        />
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div class="slide swiper-slide">
+                        <img
+                            src={Banner2}
+                            alt="Slider Image"
+                            class="slider__image"
+                        />
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div class="slide swiper-slide">
+                        <img
+                            src={Banner1}
+                            alt="Slider Image"
+                            class="slider__image"
+                        />
                     </div>
                 </SwiperSlide>
             </Swiper>

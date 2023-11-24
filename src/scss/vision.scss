@@ -39,11 +39,11 @@
         object-fit: cover;
     }
     &__icon {
-        color: #ffefc5;
+        color: $white-color;
         border-radius: 100rem;
         width: 60px;
         height: 60px;
-        background-color: $yellow-color;
+        background-color: $green-color;
         transition: all 0.25s linear;
         font-size: 33px;
         display: flex;
@@ -51,8 +51,8 @@
         justify-content: center;
         flex-shrink: 0;
         &:hover {
-            background-color: #ffefc5;
-            color: $yellow-color;
+            background-color: $white-color;
+            color: $green-color;
             transform: scale(0.9);
         }
     }

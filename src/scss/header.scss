@@ -82,7 +82,7 @@ nav {
     .drop-menu {
         position: absolute;
         background: $green-secondary;
-        width: 280px;
+        width: max-content;
         line-height: 45px;
         top: 85px;
         opacity: 0;

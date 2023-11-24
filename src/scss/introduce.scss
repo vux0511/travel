@@ -25,7 +25,7 @@
             font-size: 18px;
             line-height: 30px;
             &-yellow {
-                color: $yellow-color;
+                color: $green-color;
                 padding-bottom: 20px;
                 padding-top: 10px;
                 &::after {
@@ -33,7 +33,7 @@
                     position: absolute;
                     width: 100px;
                     height: 1px;
-                    background-color: $yellow-color;
+                    background-color: $green-color;
                     bottom: 5px;
                     left: 0;
                 }
@@ -60,7 +60,7 @@
                 position: absolute;
                 height: 60px;
                 width: 7px;
-                background-color: $yellow-color;
+                background-color: $green-color;
                 left: 0;
                 transform: translateY(-50%);
                 border-radius: 4px 0 0 4px;
