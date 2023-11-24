@@ -7,7 +7,7 @@ nav {
         position: relative;
         max-width: 1300px;
         padding: 0px 30px;
-        height: 70px;
+        height: 55px;
         line-height: 70px;
         margin: auto;
         display: flex;
@@ -63,7 +63,7 @@ nav {
         &:hover {
             .drop-menu {
                 transition: all 0.3s ease;
-                top: 70px;
+                top: 50px;
                 opacity: 1;
                 visibility: visible;
                 background-color: $green-primary;
@@ -357,8 +357,8 @@ nav {
     }
     &__logo {
         &-main {
-            width: 50px;
-            height: 50px;
+            width: 65px;
+            height: 65px;
             border-radius: 100rem;
             object-fit: cover;
             margin-left: 250px;
@@ -366,6 +366,9 @@ nav {
         &-left {
             object-fit: cover;
             width: 80px;
+            display: flex;
+            height: 40px;
+            border-radius: 2px;
         }
     }
     &__contact {

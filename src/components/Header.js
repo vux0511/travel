@@ -2,17 +2,20 @@ import { FiPhoneCall, FiMail, FiSearch, FiMenu } from "react-icons/fi";
 import { MdOutlineClear } from "react-icons/md";
 import LogoLeft from "../assets/logo-left.png";
 import LogoMain from "../assets/logo-main.jpeg";
+import { Link } from "react-router-dom";
 
 function Header() {
     return (
         <nav>
             <div className="header wrapper__top">
                 <div className="header__top">
-                    <img
-                        src={LogoLeft}
-                        alt="LogoLeft"
-                        className="header__logo-left"
-                    />
+                    <Link to="/">
+                        <img
+                            src={LogoLeft}
+                            alt="LogoLeft"
+                            className="header__logo-left"
+                        />
+                    </Link>
                     <img
                         src={LogoMain}
                         alt="LogoMain"
@@ -37,13 +40,13 @@ function Header() {
                             <MdOutlineClear />
                         </label>
                         <li>
-                            <a href="#">Home</a>
+                            <Link to="/">Home</Link>
                         </li>
                         <li>
-                            <a href="#">Tour Trong Nước</a>
+                            <Link to="/tour-trong-nuoc">Tour Trong Nước</Link>
                         </li>
                         <li>
-                            <a href="#">Tour Nước Ngoài</a>
+                            <Link to="/tour-nuoc-ngoai">Tour Nước Ngoài</Link>
                         </li>
                         {/* <li>
                             <a href="#" className="desktop-item">
@@ -174,42 +177,59 @@ function Header() {
                             </a>
                             <input type="checkbox" id="showDrop" />
                             <label htmlFor="showDrop" className="mobile-item">
-                                Dropdown Menu
+                                Tour fieltrip & TNSV
                             </label>
                             <ul className="drop-menu">
                                 <li>
-                                    <a href="#">
+                                    <Link to="/kien-tap">
                                         Kiến tập trải nghiệm Sinh viên
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="#">Sinh Viên quốc té</a>
+                                    <Link to="/sv-quoc-te">
+                                        Sinh Viên quốc tế
+                                    </Link>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#">TEAMBUILDING & EVENTS</a>
+                            <Link to="/teambuilding-event">
+                                TEAMBUILDING & EVENTS
+                            </Link>
                         </li>
                         <li>
                             <a href="#" className="desktop-item">
-                                Về Chúng tôi
+                                Dịch Vụ Cung Ứng
                             </a>
                             <input type="checkbox" id="showDrop" />
                             <label htmlFor="showDrop" className="mobile-item">
-                                Dropdown Menu
+                                Dịch Vụ Cung Ứng
                             </label>
                             <ul className="drop-menu">
                                 <li>
-                                    <a href="#">Dịch Vụ Visa</a>
+                                    <Link to="/ho-so-nang-luc">Thuê Xe</Link>
                                 </li>
                                 <li>
-                                    <a href="#">Hồ sơ năng lực</a>
+                                    <Link to="/dich-vu-visa">Dịch Vụ Visa</Link>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" className="desktop-item">
+                                Về Chúng Tôi
+                            </a>
+                            <input type="checkbox" id="showDrop" />
+                            <label htmlFor="showDrop" className="mobile-item">
+                                Về Chúng Tôi
+                            </label>
+                            <ul className="drop-menu">
+                                <li>
+                                    <Link to="/ho-so-nang-luc">
+                                        Hồ Sơ Năng Lực
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="#">Cung ứng dịch vụ</a>
-                                </li>
-                                <li>
-                                    <a href="#">Giới thiệu</a>
+                                    <Link to="/gioi-thieu">Giới Thiệu</Link>
                                 </li>
                             </ul>
                         </li>

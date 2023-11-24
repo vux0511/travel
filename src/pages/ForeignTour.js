@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import Category from "../components/Category";
 import TourCard from "../components/TourCard";
 
-function TourInVietNam() {
+function ForeignTour() {
     return (
         <>
             <Header />
@@ -16,4 +16,4 @@ function TourInVietNam() {
     );
 }
 
-export default TourInVietNam;
+export default ForeignTour;
