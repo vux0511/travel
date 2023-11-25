@@ -20,16 +20,15 @@ function Introduce() {
                 </div>
                 <div className="introduce__content">
                     <div className="introduce__content-top">
-                        Luxury Travel, một thành viên của LuxGroup, đã xây dựng
-                        danh tiếng vững chắc trong suốt hơn 20 năm hoạt động.
+                        DingDing Travel là một dựng danh tiếng vững chắc trong
+                        suốt gần 10 năm hoạt động.
                     </div>
                     <div className="introduce__content-main">
                         <p>
                             Chúng tôi hoạt động đa dạng trong lĩnh vực vận tải,
-                            du thuyền, du lịch, nhà hàng và khách sạn. Dưới sự
-                            lãnh đạo của doanh chủ Phạm Hà, Luxury Travel tập
-                            trung vào việc cung cấp trải nghiệm sang trọng và cá
-                            nhân hóa.
+                            du thuyền, du lịch, nhà hàng và khách sạn. DingDing
+                            Travel tập trung vào việc cung cấp trải nghiệm sang
+                            trọng và cá nhân hóa.
                         </p>
                         <p>
                             Chúng tôi tự hào mang đến các kỳ nghỉ độc đáo với

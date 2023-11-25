@@ -181,12 +181,12 @@ function Header() {
                             </label>
                             <ul className="drop-menu">
                                 <li>
-                                    <Link to="/kien-tap">
+                                    <Link to="/trai-nghiem-sinh-vien">
                                         Kiến tập trải nghiệm Sinh viên
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/sv-quoc-te">
+                                    <Link to="/sinh-vien-quoc-te">
                                         Sinh Viên quốc tế
                                     </Link>
                                 </li>
@@ -207,7 +207,7 @@ function Header() {
                             </label>
                             <ul className="drop-menu">
                                 <li>
-                                    <Link to="/ho-so-nang-luc">Thuê Xe</Link>
+                                    <Link to="/thue-xe">Thuê Xe</Link>
                                 </li>
                                 <li>
                                     <Link to="/dich-vu-visa">Dịch Vụ Visa</Link>

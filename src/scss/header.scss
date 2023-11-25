@@ -58,6 +58,7 @@ nav {
             transition: all 0.3s ease;
             &:hover {
                 background: $green-secondary;
+                opacity: 0.6;
             }
         }
         &:hover {
@@ -66,7 +67,8 @@ nav {
                 top: 50px;
                 opacity: 1;
                 visibility: visible;
-                background-color: $green-primary;
+                // background-color: $green-primary;
+                padding-right: 20px;
             }
             .mega-box {
                 transition: all 0.3s ease;

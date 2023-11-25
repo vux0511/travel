@@ -8,8 +8,8 @@ function Vision() {
             <div className="tours__desc vision__top-desc">DINGDING TRAVEL</div>
             <div className="tours__header line">Định Vị Thương Hiệu</div>
             <div className="chooseus__text vision__text">
-                Luxury Travel tự hào là công ty lữ hành chuyên cung cấp dịch vụ
-                du lịch sang trọng hàng đầu Việt Nam và Châu Á, đã đoạt nhiều
+                DingDing Travel tự hào là công ty lữ hành chuyên cung cấp dịch
+                vụ du lịch sang trọng hàng đầu Việt Nam và Châu Á, đã đoạt nhiều
                 giải thưởng trong nước và quốc tế.
             </div>
             <div className="vision__wrapper">
@@ -42,7 +42,7 @@ function Vision() {
                         <div className="vision__info">
                             <div className="vision__title">GIÁ TRỊ CỐT LÕI</div>
                             <div className="vision__desc">
-                                Giá trị cốt lõi đối với Luxury Travel là khách
+                                Giá trị cốt lõi đối với DingDing Travel là khách
                                 hàng. Chúng tôi làm việc hết sức để mang lại cảm
                                 xúc "Wow" cho khách hàng sử dụng dịch vụ của
                                 chúng tôi.

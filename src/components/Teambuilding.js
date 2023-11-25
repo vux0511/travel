@@ -1,3 +1,11 @@
+import { IoChatbubblesSharp } from "react-icons/io5";
+import { MdTravelExplore } from "react-icons/md";
+import { FcIdea } from "react-icons/fc";
+import { HiMiniUserGroup } from "react-icons/hi2";
+import { MdHealthAndSafety } from "react-icons/md";
+import { VscFeedback } from "react-icons/vsc";
+import { LiaBrainSolid } from "react-icons/lia";
+
 function Teambuilding() {
     return (
         <div className="wrapper">
@@ -82,10 +90,10 @@ function Teambuilding() {
                 </div>
             </div>
             <section className="container teambuilding">
-                <div className="visa__title visa__line teambuilding__title">
+                <div className="visa__title visa__line teambuilding__title teambuilding__title2">
                     CÁC TRÒ CHƠI TEAM BUILDING
                 </div>
-                <div className="teambuilding__desc">
+                <div className="teambuilding__desc teambuilding__desc2">
                     <p>
                         Trò chơi teambuilding đóng vai trò quan trọng trong việc
                         xây dựng sự gắn kết và tạo môi trường làm việc tích cực
@@ -150,6 +158,136 @@ function Teambuilding() {
                         alt="Teambuilding Game"
                         className="teambuilding__game-image"
                     />
+                </div>
+            </section>
+            <section className="container teambuilding">
+                <div className="visa__title visa__line teambuilding__title">
+                    DU LỊCH TEAM BUILDING CÙNG DINGDING TRAVEL & EVENTS
+                </div>
+                <div className="teambuilding__desc">
+                    <p>
+                        Hoạt động trong lĩnh vực lữ hành từ năm 2009, Công ty
+                        DingDing Travel & Events đồng thời là đơn vị chuyên tổ
+                        chức sự kiện, hội thảo và các chuyến du lịch trong và
+                        ngoài nước cho các doanh nghiệp và tổ chức. Quy trình và
+                        cách thức tổ chức tour du lịch Team Building cho doanh
+                        nghiệp của chúng tôi như sau.
+                    </p>
+                </div>
+                <div className="chooseus__wrapper teambuilding__steps">
+                    <div className="chooseus__item teambuilding__steps-item">
+                        <IoChatbubblesSharp className="chooseus__icon teambuilding__steps-icon" />
+                        <div className="chooseus__title teambuilding__steps-title">
+                            1. Thảo luận nhu cầu của khách hàng
+                        </div>
+                        <div className="chooseus__desc teambuilding__steps-desc">
+                            Trước khi tổ chức tour du lịch team building, Image
+                            Travel & Events sẽ trao đổi và phân tích nhu cầu của
+                            khách hàng. Chúng tôi sẽ tìm hiểu kỹ mục đích của
+                            việc tổ chức team building, số lượng người tham gia,
+                            độ tuổi, sức khỏe và sở thích chung của các thành
+                            viên.
+                        </div>
+                    </div>
+                    <div className="chooseus__item teambuilding__steps-item">
+                        <MdTravelExplore className="chooseus__icon teambuilding__steps-icon" />
+                        <div className="chooseus__title teambuilding__steps-title">
+                            2. Lựa chọn địa điểm và thiết kế phù hợp
+                        </div>
+                        <div className="chooseus__desc teambuilding__steps-desc">
+                            Image Travel & Events sẽ cùng quý khách lựa chọn địa
+                            điểm phù hợp nhất với nhu cầu và ngân sách của mình
+                            để tổ chức tour du lịch team building. Đội ngũ thiết
+                            kế của chúng tôi sẽ lên ý tưởng, concept, banner,
+                            hashtag và clip kỷ niệm mang màu sắc riêng của quý
+                            DN.
+                        </div>
+                    </div>
+                    <div className="chooseus__item teambuilding__steps-item">
+                        <LiaBrainSolid className="chooseus__icon teambuilding__steps-icon" />
+                        <div className="chooseus__title teambuilding__steps-title">
+                            3. Lên ý tưởng các hoạt động team building
+                        </div>
+                        <div className="chooseus__desc teambuilding__steps-desc">
+                            Image Travel & Events tư vấn và thiết kế riêng kịch
+                            bản các hoạt động du lịch team building phù hợp với
+                            nhu cầu của từng khách hàng. Các hoạt động này có
+                            thể là các trò chơi, hoạt động thể thao, game trí
+                            tuệ, hoạt động xã hội, hoạt động du lịch có trách
+                            nhiệm…
+                        </div>
+                    </div>
+                    <div className="chooseus__item teambuilding__steps-item">
+                        <HiMiniUserGroup className="chooseus__icon teambuilding__steps-icon" />
+                        <div className="chooseus__title teambuilding__steps-title">
+                            4. Cung cấp phương tiện và đội ngũ
+                        </div>
+                        <div className="chooseus__desc teambuilding__steps-desc">
+                            Image Travel & Events chuẩn bị, cung cấp các thiết
+                            bị, đạo cụ và phương tiện cần thiết để tổ chức các
+                            hoạt động tour du lịch team building : dụng cụ chơi
+                            các trò chơi, thiết bị thể thao và các phương tiện
+                            di chuyển, âm thanh, ánh sáng, MC và hướng dẫn viên
+                            chuyên nghiệp.
+                        </div>
+                    </div>
+                    <div className="chooseus__item teambuilding__steps-item">
+                        <MdHealthAndSafety className="chooseus__icon teambuilding__steps-icon" />
+                        <div className="chooseus__title teambuilding__steps-title">
+                            5. Đảm bảo an toàn và bảo hiểm
+                        </div>
+                        <div className="chooseus__desc teambuilding__steps-desc">
+                            Image Travel & Events luôn khảo sát địa điểm và các
+                            hoạt động trước khi bắt đầu tổ chức để đảm bảo hoạt
+                            động du lịch team building diễn ra thuận lợi và an
+                            toàn. Gói bảo hiểm du lịch cũng được kèm theo tour
+                            để đảm bảo quý khách luôn được bảo vệ trong trường
+                            hợp có sự cố xảy ra.
+                        </div>
+                    </div>
+                    <div className="chooseus__item teambuilding__steps-item">
+                        <VscFeedback className="chooseus__icon teambuilding__steps-icon" />
+                        <div className="chooseus__title teambuilding__steps-title">
+                            6. Đánh giá và phản hồi
+                        </div>
+                        <div className="chooseus__desc teambuilding__steps-desc">
+                            Sau khi hoàn thành một tour du lịch team building,
+                            Image Travel & Events sẽ thu thập phản hồi từ khách
+                            hàng và các thành viên trong nhóm để đánh giá hiệu
+                            quả của chương trình. Điều này giúp công ty cải
+                            thiện và tăng cường chất lượng dịch vụ của mình
+                            trong tương lai.
+                        </div>
+                    </div>
+                </div>
+                <div className="visa__item teambuilding__advise">
+                    <img
+                        src="https://images.unsplash.com/photo-1542637297-1318423100cf?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""
+                        className="visa__image"
+                    />
+                    <div className="visa__info">
+                        <div className="visa__item-title visa__line">
+                            Tư Vấn Dịch Vụ Teambuilding & Event
+                        </div>
+                        <div className="visa__item-desc">
+                            Mỗi chuyến du lịch team building sẽ là một kỷ niệm
+                            đẹp mà các công ty, doanh nghiệp đều mong muốn lưu
+                            giữ. Từng khoảnh khắc, từng nụ cười, từng cử chỉ
+                            cùng nhau, team truyền thông của Image Travel &
+                            Events sẽ tận tâm bắt trọn và dựng thành clip team
+                            building mang nhiều nét riêng về hình ảnh văn hóa
+                            công ty cho từng quý doanh nghiệp.
+                        </div>
+                        <a
+                            href="https://www.facebook.com/messages/t/1848020962149796"
+                            target="_blank"
+                        >
+                            <button className="visa__button">
+                                Liên Hệ Tư Vấn
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </section>
         </div>

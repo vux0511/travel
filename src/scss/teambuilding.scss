@@ -14,7 +14,7 @@
         padding-bottom: 50px;
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 12px;
     }
     &__feature {
         display: flex;
@@ -71,11 +71,32 @@
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
+        padding-bottom: 50px;
         gap: 30px;
         &-image {
             width: calc(100% / 3 - 20px);
             height: 255px;
             object-fit: cover;
         }
+    }
+    &__steps {
+        &-item {
+            background-color: #fafafa;
+            border-radius: 8px;
+        }
+        &-title {
+        }
+    }
+    &__desc {
+        padding-bottom: 0px;
+    }
+    &__advise {
+        padding-bottom: 70px;
+    }
+    &__title2 {
+        padding-top: 30px;
+    }
+    &__desc2 {
+        padding-bottom: 50px;
     }
 }

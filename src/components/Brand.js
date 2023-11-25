@@ -3,7 +3,7 @@ function Brand() {
         <div className="wrapper wrapper__brand">
             <section className="container ">
                 <div className="tours__desc">
-                    CÁC KHÁCH HÀNG ĐÃ SỬ DỤNG DỊCH VỤ CỦA LUXURY TRAVEL
+                    CÁC KHÁCH HÀNG ĐÃ SỬ DỤNG DỊCH VỤ CỦA DINGDING TRAVEL
                 </div>
                 <div className="tours__header line">
                     Các Khách Hàng Tiêu Biểu

@@ -1,0 +1,10 @@
+.profile {
+    &__tour {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+}
