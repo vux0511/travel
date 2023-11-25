@@ -2,47 +2,50 @@ import { IoTimeOutline } from "react-icons/io5";
 import { GoStarFill } from "react-icons/go";
 import { FiStar } from "react-icons/fi";
 import { FaArrowRightLong } from "react-icons/fa6";
+import CardImg from "../assets/card1.png";
+import AuthorImg from "../assets/card1.png";
+
+import { Link } from "react-router-dom";
 
 function TourCard() {
     return (
-        <div className="tourcard">
-            <img
-                src="https://luxurytravel.vn/wp-content/uploads/2020/08/Hmong-ethnic-minority-children-on-September-20-2014-in-Mucangchai-1920x1282-1-820x520.jpg"
-                alt=""
-                className="tourcard__image"
-            />
-            <div className="tourcard__name">
-                Tour Miền Cổ Tích Hà Nội - Mù Cang Chải - Ngọc Chiến
-            </div>
-            <div className="tourcard__location">
-                <div className="tourcard__time">
-                    <IoTimeOutline className="tourcard__icon" />
-                    <p>3 ngày</p>
-                </div>
-                <div className="tourcard__rating">
-                    <div className="star tourcard__icon">
-                        <GoStarFill />
-                        <GoStarFill />
-                        <GoStarFill />
-                        <GoStarFill />
-                        <GoStarFill />
+        <Link to={"/detail-tour/id"}>
+            <div className="card__item swiper-slide">
+                <img
+                    src="https://luxurytravel.vn/wp-content/uploads/2023/11/row-820x520.jpeg"
+                    alt=""
+                    className="card__image"
+                />
+                <div className="card__info">
+                    <div className="card__name">
+                        Tour Tết 2024 Du Lịch Châu Âu Anh – Xứ Wales
                     </div>
-                    <p>5/5</p>
-                    {/* <FiStar /> */}
+                    <div className="card__location">
+                        <div className="card__day">
+                            <IoTimeOutline className="card__icon" /> 5 ngày
+                        </div>
+                        <div className="card__rating">
+                            <p>
+                                <GoStarFill />
+                                <GoStarFill />
+                                <GoStarFill />
+                                <GoStarFill />
+                                <GoStarFill />
+                            </p>
+                            5/5
+                        </div>
+                    </div>
+                    <div className="card__bottom">
+                        <div className="card__price">
+                            Giá: <p>88.888.888đ</p>
+                        </div>
+                        <div className="card__more">
+                            Chi Tiết <FaArrowRightLong className="card__icon" />
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div className="tourcard__bottom">
-                <div className="tourcard__price">
-                    Giá: <span className="tourcard__total">55.555.555đ</span>
-                </div>
-                <a href="" className="tourcard__more">
-                    <span>Chi Tiết</span>
-                    <span>
-                        <FaArrowRightLong className="tourcard__icon tourcard__icon-more" />
-                    </span>
-                </a>
-            </div>
-        </div>
+        </Link>
     );
 }
 

@@ -18,28 +18,29 @@ function Tours({ title, desc }) {
                 <div className="tours__wrapper"></div>
             </div>
             <Swiper
+                navigation={true}
+                pagination={true}
                 slidesPerView={3}
                 spaceBetween={30}
-                loop={true}
-                pagination={{
-                    clickable: true,
-                }}
-                navigation={true}
-                modules={[Pagination, Navigation]}
+                loop="true"
+                modules={[Navigation, Pagination]}
                 className="mySwiper"
                 breakpoints={{
                     0: {
                         slidesPerView: 1,
                         spaceBetween: 20,
                     },
-                    480: {
-                        slidesPerView: 2,
+                    640: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
                     },
                     768: {
                         slidesPerView: 2,
+                        spaceBetween: 20,
                     },
                     1024: {
                         slidesPerView: 3,
+                        spaceBetween: 30,
                     },
                 }}
             >

@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import DetailPage from "./pages/DetailPage";
+import DetailTourPage from "./pages/DetailTourPage";
 import TourInVietNam from "./pages/TourInVietNam";
 import ForeignTour from "./pages/ForeignTour";
 import VisaPage from "./pages/VisaPage";
@@ -25,7 +25,7 @@ function App() {
                     path="/teambuilding-event"
                     element={<TeambuildingPage />}
                 />
-                <Route path="/detail" element={<DetailPage />} />
+                <Route path="/detail-tour/:id" element={<DetailTourPage />} />
                 <Route path="/gioi-thieu" element={<AboutPage />} />
                 <Route
                     path="/trai-nghiem-sinh-vien"
