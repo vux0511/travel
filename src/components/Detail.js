@@ -173,7 +173,7 @@ function Detail() {
             <div className="container tab__container">
                 <div className="tabs">
                     <div className="tab-item active">Giới Thiệu</div>
-                    <div className="tab-item">Đánh Giá</div>
+                    {/* <div className="tab-item">Đánh Giá</div> */}
                     <div className="linee" />
                 </div>
                 <div className="tab-content">
@@ -207,10 +207,10 @@ function Detail() {
                             </li>
                         </div>
                     </div>
-                    <div className="tab-pane">
+                    {/* <div className="tab-pane">
                         <p className="tab__title">ĐÁNH GIÁ</p>
                         <p>...</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </>

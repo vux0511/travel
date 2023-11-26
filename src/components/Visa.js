@@ -9,16 +9,81 @@ function Visa() {
                     DỊCH VỤ VISA DU LỊCH, THĂM THÂN
                 </div>
                 <div className="visa__desc">
-                    Để có thể du lịch cũng như xuất cảnh nước ngoài, bạn cần
-                    phải có visa. Tuy nhiên câu chuyện xin visa được xem là một
-                    trong những nỗi ám ảnh của rất nhiều người, vì phải tự chuẩn
-                    bị thủ tục giấy tờ rắc rối và đôi khi chỉ vì một sai sót
-                    nhỏ, bạn có thể sẽ tuột mất cơ hội hay thậm chí là bị cấm
-                    nhập cảnh. Thay vì phải tự xoay sở mà rủi ro lại cực kỳ cao
-                    bạn nên nhờ một đơn vị chuyên về dịch vụ visa uy tín, chúng
-                    tôi sẽ giúp bạn giải quyết các tình huống khó, cấp bách một
-                    cách nhanh chóng và đạt hiệu quả mà không cần phải quá tốn
-                    quá nhiều thời gian và chi phí.
+                    <p>
+                        Bạn muốn đi du lịch cũng như xuất cảnh nước ngoài, Bạn
+                        cần phải có Visa. Có nhiều kinh nghiệm trong việc thẩm
+                        định hồ sơ cũng như dịch vụ Visa hàng đầu, khi khách
+                        hàng sử dụng dịch vụ Visa của DingDing travel thì luôn
+                        yên tâm về thời gian cũng như kết quả với quy trình thủ
+                        tục đơn giản, nhanh chóng, chuyên nghiệp và tiết kiệm
+                        chi phí tốt nhất cho Khách hàng, cùng với đội ngũ nhân
+                        viên tư vấn, chúng tôi đã thực hiện xin cấp mới, gia hạn
+                        Visa xuất nhập cảnh Việt Nam và Visa đi các nước Châu Á,
+                        Châu Âu, Châu Mỹ, Châu Phi, Châu Úc,…
+                    </p>
+                </div>
+                <div className="visa__step">
+                    <div className="visa__title visa__line">
+                        CÁC BƯỚC LÀM DỊCH VỤ VISA THĂM THÂN, DU LỊCH
+                    </div>
+                    <div className="visa__step-wrapper">
+                        <div className="visa__step-item">
+                            <img
+                                src="https://img.freepik.com/premium-vector/men-think-with-think-bubble-symbol_112255-1651.jpg"
+                                alt=""
+                                className="visa__step-image"
+                            />
+                            <div className="visa__step-title">
+                                TƯ VẤN VÀ BÁO GIÁ
+                            </div>
+                            <div className="visa__step-desc">
+                                Luôn lắng nghe quý khách, tư vấn và báo giá theo
+                                từng trường hợp cụ thể.
+                            </div>
+                        </div>
+                        <div className="visa__step-item">
+                            <img
+                                src="https://st3.depositphotos.com/15648834/17930/v/450/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"
+                                alt=""
+                                className="visa__step-image"
+                            />
+                            <div className="visa__step-title">
+                                SOẠN THẢO HỒ SƠ
+                            </div>
+                            <div className="visa__step-desc">
+                                Chuẩn bị & sắp xếp hồ sơ, khai form, điền biểu
+                                mẫu.
+                            </div>
+                        </div>
+                        <div className="visa__step-item">
+                            <img
+                                src="https://img.freepik.com/free-vector/upload-concept-illustration_114360-1317.jpg"
+                                alt=""
+                                className="visa__step-image"
+                            />
+                            <div className="visa__step-title">
+                                NỘP HỒ SƠ VISA
+                            </div>
+                            <div className="visa__step-desc">
+                                Thay mặt khách hàng nộp hồ sơ tại cơ quan có
+                                thẩm quyền.
+                            </div>
+                        </div>
+                        <div className="visa__step-item">
+                            <img
+                                src="https://img.freepik.com/premium-vector/visa-application-travel-approval-immigration-visa-vector-stock-illustration_100456-11231.jpg"
+                                alt=""
+                                className="visa__step-image"
+                            />
+                            <div className="visa__step-title">
+                                NHẬN KẾT QUẢ VISA
+                            </div>
+                            <div className="visa__step-desc">
+                                Theo dõi tình trạng và báo khách ngay khi có kết
+                                quả. Giao nhận tận nơi.
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="visa__item">
                     <img

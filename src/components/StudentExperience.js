@@ -21,22 +21,33 @@ function StudentExperiencePage() {
                     </div>
                     <div className="teambuilding__desc">
                         <p>
+                            Xu hướng học tập mới hiện nay không chỉ dừng lại ở
+                            việc tiếp thu kiến thức trên giảng đường, mà còn là
+                            những buổi học ngoại khóa, những buổi tham quan
+                            doanh nghiệp, dã ngoại để các em sinh viên không chỉ
+                            được tham quan du lịch truyền thống mà còn có thể
+                            tiếp xúc với môi trường nghề nghiệp tương lai: các
+                            công ty, trường đại học, viện nghiên cứu, cũng như
+                            gặp gỡ, trò chuyện về kinh nghiệm với các chuyên
+                            gia, cựu sinh viên đã thành công trong nghề nghiệp,
+                            từ đó vận dụng những kiến thức đã học vào thực tế
+                            củng cố lòng yêu nghành, yêu nghề học hỏi thêm nhiều
+                            kỹ năng mềm bổ ích, đúc kết kinh nghiệm cần thiết
+                            trước khi ra trường và tìm kiếm việc làm.
+                        </p>
+                        <p>
                             Tour học sinh sinh viên là hoạt động ngoại khóa hấp
-                            dẫn và bổ ích dành cho các bạn trẻ chưa rời ghế nhà
+                            dẫn và bổ ích dành cho các bạn trẻ trước khi ra
                             trường. Đây là cơ hội để học sinh sinh viên khám
                             phá, tìm hiểu và trải nghiệm văn hóa, lịch sử, con
                             người của một địa phương nào đó, đồng thời rèn luyện
                             kỹ năng giao tiếp, kết nối và phát triển bản thân
-                            thông qua một chủ đề được chuẩn bị trước.
                         </p>
                         <p>
-                            Đặc biệt, tham gia tour học sinh sinh viên, các bạn
-                            trẻ được dịp giao lưu, kết nối với nhau, cùng chia
-                            sẻ những niềm vui, trăn trở trong quá trình học tập
-                            hay con đường sự nghiệp phía trước. Với sự hướng dẫn
-                            của những chuyên gia, giáo viên nhiệt tình và giàu
-                            kinh nghiệm, các bạn trẻ sẽ sống cùng những trải
-                            nghiệm tuyệt vời và đáng nhớ trên đường tour.
+                            Kết hợp hoạt động team building nhẹ nhàng cũng giúp
+                            các em giảm bớt áp lực học hành, thi cử. Để từ đó
+                            tăng khả năng linh hoạt và tạo ra tinh thần đoàn kết
+                            hơn cho các em.
                         </p>
                     </div>
                 </section>
@@ -48,7 +59,7 @@ function StudentExperiencePage() {
                     />
                     <div className="visa__info studentexperience__title">
                         <div className="visa__item-title visa__line">
-                            TOUR HỌC SINH SINH VIÊN
+                            TƯ VẤN TOUR HỌC SINH SINH VIÊN
                         </div>
                         <div className="visa__item-desc">
                             Dưới đây là gợi ý một số tour học sinh sinh viên hấp
@@ -74,9 +85,7 @@ function StudentExperiencePage() {
                     </div>
                     <div className="teambuilding__desc">
                         <p>
-                            Hoạt động trong lĩnh vực lữ hành từ năm 2009, bên
-                            cạnh các tour du lịch quốc tế, Công ty DingDing
-                            Travel & Events đồng thời còn là đơn vị chuyên tổ
+                            Công ty DingDing Travel & Events là đơn vị chuyên tổ
                             chức sự kiện, hội thảo, team building cho các doanh
                             nghiệp, tổ chức và tour học sinh sinh viên, hoạt
                             động ngoại khóa cho các trường học, trường đại học.

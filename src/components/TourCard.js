@@ -1,9 +1,6 @@
 import { IoTimeOutline } from "react-icons/io5";
 import { GoStarFill } from "react-icons/go";
-import { FiStar } from "react-icons/fi";
 import { FaArrowRightLong } from "react-icons/fa6";
-import CardImg from "../assets/card1.png";
-import AuthorImg from "../assets/card1.png";
 
 import { Link } from "react-router-dom";
 

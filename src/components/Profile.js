@@ -1,4 +1,4 @@
-import TourCard from "./TourCard";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 function Profile() {
     return (
@@ -15,30 +15,175 @@ function Profile() {
                 </div>
                 <div className="teambuilding__desc">
                     <p>
-                        Giữa thị trường du lịch đầy cạnh tranh DingDing Travel
-                        vẫn được đông đảo quý khách hàng tin yêu lựa chọn nhờ
-                        chất lượng phục vụ được đặt lên hàng đầu, đa dạng loại
-                        hình du lịch từ du lịch trong nước, du lịch nước ngoài,
-                        nghỉ dưỡng cho đến du lịch hành hương,du lịch được kết
-                        hợp cùng team building, gala dinner,…
-                    </p>
-                    <p>
-                        Tất cả với mong muốn đem đến cho quý khách hàng nhiều sự
-                        lựa chọn khi đặt niềm tin vào DingDing Travel. Qua nhiều
-                        năm hình thành và phát triển DingDing Travel tự hào là
-                        một trong những đơn vị được nhiều khách hàng và đối tác
-                        tin tưởng lựa chọn bởi sự tận tâm, tử tế, trọn vẹn với
-                        một tinh thần trách nhiệm vì khách hàng từ toàn bộ đội
-                        ngũ cán bộ công nhân viên trong công ty.
+                        DingDing travel cung cấp đa dạng các tour du lịch, trải
+                        nghiệm kiến tập HSSV, events và teambuilding. Cam kết
+                        luôn mang lại cho khách hàng những dịch vụ hoàn hảo và
+                        chất lượng nhất.
                     </p>
                 </div>
-                <div className="profile__tour">
-                    <TourCard />
-                    <TourCard />
-                    <TourCard />
-                    <TourCard />
-                    <TourCard />
-                    <TourCard />
+                <div className="profile__content">
+                    <div className="profile__item">
+                        <img
+                            src="https://images.unsplash.com/photo-1575986767340-5d17ae767ab0?q=80&w=2833&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt=""
+                            className="profile__image"
+                        />
+                        <div className="profile__info">
+                            <div className="profile__title">
+                                Tour Trong Nước
+                            </div>
+                            <div className="profile__desc">
+                                <p>
+                                    <FaArrowRightLong className="profile__icon" />
+                                    Việt Nam được mẹ thiên nhiên ưu ái được sở
+                                    hữu “rừng vàng, biển bạc”, du lịch nội địa
+                                    ngày càng thu hút đông đảo sự quan tâm của
+                                    du khách cả trong lẫn ngoài nước.
+                                </p>
+                                <p>
+                                    <FaArrowRightLong className="profile__icon" />
+                                    DingDing travel mang đến cho du khách những
+                                    Tour Trong nước chất lượng, độc đáo để phục
+                                    vụ khách du lịch trên toàn quốc. Mạng lưới
+                                    đối tác đa dạng, với hơn 50 tuyến du lịch
+                                    tại 63 tỉnh thành.
+                                </p>
+                                <p>
+                                    <FaArrowRightLong className="profile__icon" />
+                                    Lựa chọn du lịch cùng DingDing, bạn có thể
+                                    khám phá những điểm đến đẹp nhất trên dải
+                                    đất hình chữ “S’’, nơi địa đầu cực Bắc Tổ
+                                    quốc vốn nổi tiếng với những thắng cảnh đẹp
+                                    hút hồn, các lễ hội truyền thống đặc sắc và
+                                    những di sản văn hóa mang đậm giá trị lịch
+                                    sử dân tộc, hay như dải đất miền Trung đầy
+                                    nắng và gió, nhưng có lợi thế bờ biển xanh
+                                    ngát cùng các khu resort cao cấp, chắc chắn
+                                    sẽ mang đến cho bạn chuyến nghỉ dưỡng vô
+                                    cùng thoải mái. Hoặc “đổi gió” về với miệt
+                                    vườn thân thương, để cảm nhận bức họa đồng
+                                    quê yên bình và cái tình cái nghĩa dễ mến
+                                    của bà con nơi đây.
+                                </p>
+                                <p>
+                                    <FaArrowRightLong className="profile__icon" />
+                                    Đa dạng các hình thức tổ chức MICE,
+                                    Teambuilding, nghỉ dưỡng, trải nghiệm…
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="profile__item">
+                        <div className="profile__info">
+                            <div className="profile__title">
+                                Tour Trải Nghiệm HSSV (Fieltrip) , kết hợp các
+                                giá trị Giáo Dục
+                            </div>
+                            <div className="profile__desc">
+                                <p>
+                                    <FaArrowRightLong className="profile__icon" />
+                                    Xu hướng học tập mới hiện nay không chỉ dừng
+                                    lại ở việc tiếp thu kiến thức trên giảng
+                                    đường, mà còn là những buổi học ngoại khóa,
+                                    những buổi tham quan doanh nghiệp, dã ngoại
+                                    để các em sinh viên không chỉ được tham quan
+                                    du lịch truyền thống mà còn có thể tiếp xúc
+                                    với môi trường nghề nghiệp tương lai: Các
+                                    công ty, trường đại học, viện nghiên cứu,
+                                    cũng như gặp gỡ, trò chuyện về kinh nghiệm
+                                    với các chuyên gia, cựu sinh viên đã thành
+                                    công trong nghề nghiệp , từ đó vận dụng
+                                    những kiến thức đã học vào thực tế củng cố
+                                    lòng yêu nghành, yêu nghề học hỏi thêm nhiều
+                                    kỹ năng mềm bổ ích, đúc kết kinh nghiệm cần
+                                    thiết trước khi ra trường và tìm kiếm việc
+                                    làm.
+                                </p>
+                                <p>
+                                    <FaArrowRightLong className="profile__icon" />
+                                    Xu hướng học tập mới hiện nay không chỉ dừng
+                                    lại ở việc tiếp thu kiến thức trên giảng
+                                    đường, mà còn là những buổi học ngoại khóa,
+                                    những buổi tham quan doanh nghiệp, dã ngoại
+                                    để các em sinh viên không chỉ được tham quan
+                                    du lịch truyền thống mà còn có thể tiếp xúc
+                                    với môi trường nghề nghiệp tương lai: Các
+                                    công ty, trường đại học, viện nghiên cứu,
+                                    cũng như gặp gỡ, trò chuyện về kinh nghiệm
+                                    với các chuyên gia, cựu sinh viên đã thành
+                                    công trong nghề nghiệp, từ đó vận dụng những
+                                    kiến thức đã học vào thực tế củng cố lòng
+                                    yêu nghành, yêu nghề học hỏi thêm nhiều kỹ
+                                    năng mềm bổ ích, đúc kết kinh nghiệm cần
+                                    thiết trước khi ra trường và tìm kiếm việc
+                                    làm.
+                                </p>
+                                <p>
+                                    <FaArrowRightLong className="profile__icon" />
+                                    Kết hợp hoạt động team building nhẹ nhàng
+                                    cũng giúp các em giảm bớt áp lực học hành,
+                                    thi cử. Để từ đó tăng khả năng linh hoạt và
+                                    tạo ra tinh thần đoàn kết hơn cho các em.
+                                </p>
+                            </div>
+                        </div>
+                        <img
+                            src="https://images.unsplash.com/photo-1455734729978-db1ae4f687fc?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt=""
+                            className="profile__image"
+                        />
+                    </div>
+                    <div className="profile__item">
+                        <img
+                            src="https://images.unsplash.com/photo-1473398643778-d68e48a374c1?q=80&w=2542&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt=""
+                            className="profile__image"
+                        />
+                        <div className="profile__info">
+                            <div className="profile__title">Tour Quốc Tế </div>
+                            <div className="profile__desc">
+                                <p>
+                                    <FaArrowRightLong className="profile__icon" />
+                                    Du lịch quốc tế mở ra một thế giới đa dạng
+                                    với vô số cơ hội khám phá và trải nghiệm.
+                                    Một đơn vị uy tín trên thị trường quốc tế,
+                                    với nhiều năm kinh nghiệm hoạt động ở các
+                                    thị trường Châu Á – Thái Bình Dương, Châu
+                                    Âu, Châu Úc và Mỹ,… Là đối tác thường xuyên
+                                    của hơn 30 tập đoàn.
+                                </p>
+                                <p>
+                                    <FaArrowRightLong className="profile__icon" />
+                                    Châu Á vốn nổi tiếng là châu lục có nhiều
+                                    quốc gia đa văn hóa, sở hữu những nét độc
+                                    đáo riêng biệt, khí hâu nhiệt đới đặc trưng.
+                                    Bạn có thể đắm chìm trong vẻ đẹp của mùa thu
+                                    Hàn Quốc, khám phá di sản lịch sử ở Ấn Độ,
+                                    và thử ẩm thực đa dạng tại Nhật Bản…
+                                </p>
+                                <p>
+                                    <FaArrowRightLong className="profile__icon" />
+                                    Châu Âu với vẻ đẹp kiến trúc lịch sử, lối
+                                    sống đẳng cấp và ẩm thực độc đáo, là một
+                                    điểm đến yêu thích của nhiều người. Du khách
+                                    sẽ được khám phá những điểm đến nổi tiếng
+                                    tại “lục địa già”: Paris lãng mạn ở Pháp, mỹ
+                                    phẩm thiên nhiên ở Thụy Điển, hoặc khám phá
+                                    sự pha trộn văn hóa ở Thổ Nhĩ Kỳ hay kinh đô
+                                    thời trang ở Italia.
+                                </p>
+                                <p>
+                                    <FaArrowRightLong className="profile__icon" />
+                                    Châu Mỹ và Châu Úc cũng đang chờ đợi bạn với
+                                    những cảnh quan thiên nhiên tuyệt đẹp và cơ
+                                    hội trải nghiệm cuộc sống hoang dã. Đắm chìm
+                                    tại nước Mỹ xinh đẹp, Canada lãng mạn hay
+                                    tìm hiểu về đời sống thú vị của người dân
+                                    Cuba, xứ sở “Chuột Túi” Australia,…
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>

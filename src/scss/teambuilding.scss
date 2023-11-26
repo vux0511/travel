@@ -15,6 +15,11 @@
         display: flex;
         flex-direction: column;
         gap: 12px;
+        p {
+            span {
+                font-weight: 500;
+            }
+        }
     }
     &__feature {
         display: flex;
@@ -100,3 +105,7 @@
         padding-bottom: 50px;
     }
 }
+
+// .text__italic {
+//     font-style: italic;
+// }

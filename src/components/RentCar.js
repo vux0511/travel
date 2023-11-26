@@ -13,25 +13,16 @@ function RentCar() {
                     </div>
                     <div className="teambuilding__desc">
                         <p>
-                            Ngoài những dịch vụ về tour du lịch, trải nghiệm
-                            điểm đến, chúng tôi phục vụ những nhu cầu riêng biệt
-                            của khách hàng với chất lượng đẳng cấp. Vì thế,
-                            DingDing cung cấp cho quý khách hàng các dòng xe ô
-                            tô hiện đại, sang trọng và tiện nghi cho những trải
-                            nghiệm tự lái hoặc cùng các lái xe giàu kinh nghiệm
-                            của DingDing.
+                            Bạn đang muốn tìm dịch vụ cho thuê xe du lịch tự lái
+                            để đưa gia đình, người thân đi du lịch trong những
+                            dịp nghỉ lễ dài ngày. Bạn mong muốn có thể chủ động
+                            di chuyển trong chuyến công tác cùng đồng nghiệp.
                         </p>
                         <p>
-                            Dịch vụ DingDing đặc biệt phù hợp với những quý
-                            khách yêu thích tự trải nghiệm, nhóm khách gia đình
-                            hoặc bạn bè có nhu cầu du lịch riêng, an toàn, linh
-                            hoạt & làm chủ chuyến đi của mình.
-                        </p>
-                        <p>
-                            Các dòng xe của DingDing đa dạng và vô cùng thuận
-                            tiện cho các trải nghiệm: Xe Toyota Ford, Innova 7
-                            chỗ, Starex 9 chỗ, Solati 16 chỗ, xe Limousine 9 chỗ
-                            .
+                            Dịch vụ cho thuê xe ô tô tự lái DingDing Car sẽ đáp
+                            ứng được những mong muốn bên trên của bạn giúp bạn
+                            có một chuyến đi thật thoải mái và tiết kiệm.
+                            DingDing Car có đầy đủ các mẫu xe từ 4-16 chỗ.
                         </p>
                     </div>
                     <div className="visa__item rentcar__advise">

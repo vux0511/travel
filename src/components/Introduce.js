@@ -4,7 +4,7 @@ function Introduce() {
     return (
         <section className="container introduce">
             <img
-                src="https://luxurytravel.vn/wp-content/uploads/2023/05/02-The-Anam-Staff-1024x883.jpg"
+                src="https://images.unsplash.com/photo-1606801954050-be6b29588460?q=80&w=2180&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
                 className="introduce__image"
             />

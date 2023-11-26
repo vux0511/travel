@@ -25,13 +25,14 @@
         align-items: center;
         justify-content: space-between;
         gap: 50px;
-        align-self: center;
+        align-self: flex-start;
     }
     &__item {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
         gap: 15px;
+        align-self: flex-start;
     }
     &__image {
         width: 100%;
