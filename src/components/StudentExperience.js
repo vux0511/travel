@@ -80,16 +80,16 @@ function StudentExperiencePage() {
                 </div>
                 <section className="container teambuilding ">
                     <div className="visa__title visa__line teambuilding__title studentexperience__title">
-                        TỔ CHỨC TOUR HỌC SINH SINH VIÊN CÙNG DINGDING TRAVEL &
-                        EVENTS
+                        TỔ CHỨC TOUR KIẾN TẬP CHO HỌC SINH SINH VIÊN CÙNG
+                        DINGDING TRAVEL
                     </div>
                     <div className="teambuilding__desc">
-                        <p>
-                            Công ty DingDing Travel & Events là đơn vị chuyên tổ
-                            chức sự kiện, hội thảo, team building cho các doanh
-                            nghiệp, tổ chức và tour học sinh sinh viên, hoạt
-                            động ngoại khóa cho các trường học, trường đại học.
-                        </p>
+                        <p>1.Nhóm ngành Tài Chính – Ngân Hàng</p>
+                        <p>2.Nhóm ngành Kinh Tế - Kế Toán</p>
+                        <p>3. Nhóm ngành Thông Tin </p>
+                        <p>4. Nhóm ngành Quản trị kinh doanh – Dịch vụ</p>
+                        <p>5. Nhóm ngành Luật </p>
+                        <p>6. Nhóm ngành Thời trang</p>
                     </div>
                     <div className="chooseus__wrapper teambuilding__steps">
                         <div className="chooseus__item teambuilding__steps-item">

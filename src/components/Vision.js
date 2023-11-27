@@ -8,9 +8,9 @@ function Vision() {
             <div className="tours__desc vision__top-desc">DINGDING TRAVEL</div>
             <div className="tours__header line">Định Vị Thương Hiệu</div>
             <div className="chooseus__text vision__text">
-                DingDing Travel tự hào là công ty lữ hành chuyên cung cấp dịch
-                vụ du lịch sang trọng hàng đầu Việt Nam và Châu Á, đã đoạt nhiều
-                giải thưởng trong nước và quốc tế.
+                DingDing Travel tự hào là công ty du lịch và lữ hành chuyên cung
+                cấp dịch vụ du lịch chất lượng hàng đầu Việt Nam cũng như trên
+                thế giới
             </div>
             <div className="vision__wrapper">
                 <div className="vision__items">
@@ -28,10 +28,12 @@ function Vision() {
                         <div className="vision__info">
                             <div className="vision__title">SỨ MỆNH</div>
                             <div className="vision__desc">
-                                Sứ mệnh của chúng tôi là đem lại trải nghiệm du
-                                lịch cao cấp ở Việt Nam cũng như Đông Nam Á cho
-                                toàn bộ khách hàng, nâng tầm du lịch Việt Nam
-                                trên toàn cầu.
+                                Cung cấp cho khách hàng những dịch vụ chất lượng
+                                nhất, những “WOW moment” tới khách hàng trong
+                                những chuyến đi trải nghiệm. Quảng bá tinh hoa
+                                truyền thống và bản sắc dân tộc, đóng góp tích
+                                cực cho sự phát triển cho ngành du lịch Việt
+                                Nam.
                             </div>
                         </div>
                     </div>
@@ -42,10 +44,11 @@ function Vision() {
                         <div className="vision__info">
                             <div className="vision__title">GIÁ TRỊ CỐT LÕI</div>
                             <div className="vision__desc">
-                                Giá trị cốt lõi đối với DingDing Travel là khách
-                                hàng. Chúng tôi làm việc hết sức để mang lại cảm
-                                xúc "Wow" cho khách hàng sử dụng dịch vụ của
-                                chúng tôi.
+                                Giá trị cốt lõi của DingDing Travel nằm ở cam
+                                kết mang lại trải nghiệm du lịch độc đáo và
+                                không quên cho khách hàng. Là người bạn đồng
+                                hành tận tâm, luôn lắng nghe và đáp ứng mọi mong
+                                muốn của du khách.
                             </div>
                         </div>
                     </div>
@@ -58,10 +61,11 @@ function Vision() {
                         <div className="vision__info">
                             <div className="vision__title">TẦM NHÌN</div>
                             <div className="vision__desc">
-                                Chúng tôi muốn phát triển thành công ty du lịch
-                                cao cấp hàng đầu Việt Nam và châu Á dựa trên
-                                kinh nghiệm gần 20 năm làm du lịch cao cấp ở
-                                Việt Nam và Đông Nam Á.
+                                Năm 2025 trở thành doanh nghiệp cung cấp dịch vụ
+                                du lịch kết hợp học tập trải nghiệm, Fieltrip,
+                                events và teambuilding cho khối ngành Giáo dục
+                                đặc biệt là khối các trường Đại học, doanh
+                                nghiệp giáo dục phạm vi trong và ngoài nước.
                             </div>
                         </div>
                     </div>
@@ -74,10 +78,11 @@ function Vision() {
                                 ĐỊNH VỊ THƯƠNG HIỆU
                             </div>
                             <div className="vision__desc">
-                                Chúng tôi định vị phân khúc khách hàng của mình
-                                phục vụ là khách hàng cao cấp và chúng tôi tận
-                                tâm để mang lại đúng giá trị mà khách hàng mong
-                                đợi.
+                                Chúng tôi, một công ty lữ hành đa dạng và phong
+                                cách, tự hào với sứ mệnh đưa mọi người, đặc biệt
+                                là cộng đồng Giáo Dục, đến gần những trải nghiệm
+                                du lịch mới mẻ phong phú, đáp ứng đa dạng nhu
+                                cầu của từng đối tượng khách hàng.
                             </div>
                         </div>
                     </div>

@@ -24,14 +24,14 @@ function About() {
                             Tư Vấn Dịch Vụ Của DingDing
                         </div>
                         <div className="visa__item-desc">
-                            DingDing Travel tự hào là công ty lữ hành chuyên
-                            cung cấp dịch vụ du lịch sang trọng hàng đầu Việt
-                            Nam và Châu Á, đã đoạt nhiều giải thưởng trong nước
-                            và quốc tế.
+                            DingDing Travel tự hào là công ty du lịch và lữ hành
+                            chuyên cung cấp dịch vụ du lịch chất lượng hàng đầu
+                            Việt Nam cũng như trên thế giới
                         </div>
                         <a
                             href="https://www.facebook.com/messages/t/1848020962149796"
                             target="_blank"
+                            className="visa__button-advise"
                         >
                             <button className="visa__button">
                                 Liên Hệ Tư Vấn

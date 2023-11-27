@@ -52,3 +52,13 @@
         margin-right: 10px;
     }
 }
+
+@media screen and (max-width: 767.98px) {
+    .footer {
+        padding: 30px 0;
+        &__item {
+            padding: 20px;
+            width: calc(100%);
+        }
+    }
+}

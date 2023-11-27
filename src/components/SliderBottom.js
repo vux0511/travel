@@ -13,7 +13,9 @@ function SliderBottom() {
                             alt=""
                             className="sliderbottom__image"
                         />
-                        <div className="sliderbottom__text">LUXURY</div>
+                        <div className="sliderbottom__text">
+                            TIÊU CHUẨN QUỐC TẾ
+                        </div>
                     </div>
                     <div className="sliderbottom__item">
                         <img
@@ -21,7 +23,9 @@ function SliderBottom() {
                             alt=""
                             className="sliderbottom__image"
                         />
-                        <div className="sliderbottom__text">CAO CẤP</div>
+                        <div className="sliderbottom__text">
+                            DỊCH VỤ CHẤT LƯỢNG
+                        </div>
                     </div>
                     <div className="sliderbottom__item">
                         <img
@@ -29,7 +33,7 @@ function SliderBottom() {
                             alt=""
                             className="sliderbottom__image"
                         />
-                        <div className="sliderbottom__text">TIÊU CHUẨN</div>
+                        <div className="sliderbottom__text">CHI PHÍ HỢP LÝ</div>
                     </div>
                 </div>
             </section>

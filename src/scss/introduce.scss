@@ -79,6 +79,7 @@
 
 @media screen and (max-width: 767.98px) {
     .introduce {
+        margin-top: 50px;
         flex-direction: column;
         &__image {
             min-width: 100%;
@@ -92,12 +93,53 @@
         }
         &__header {
             width: 100%;
+            display: flex;
+            align-items: center;
             &-desc {
                 font-size: 14px;
                 text-align: center;
             }
+            &-desc {
+                font-size: 16px;
+                line-height: 30px;
+                &-yellow {
+                    color: $green-color;
+                    padding-bottom: 20px;
+                    padding-top: 10px;
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
             &-title {
                 font-size: 23px;
+            }
+        }
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            position: relative;
+            line-height: 30px;
+            &-top {
+                font-size: 16px;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height: 110px;
+                    width: 7px;
+                    background-color: $green-color;
+                    left: 0;
+                    top: 80px;
+                }
+            }
+            &-main {
+                font-weight: 300;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                font-size: 15px;
             }
         }
     }

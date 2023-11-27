@@ -41,12 +41,15 @@ function Teambuilding() {
                         <span>Team Building – Gala của DingDing Travel</span>{" "}
                         không đơn thuần là giúp người chơi vượt qua thử thách,
                         hay có một buổi tiệc vui chơi đơn giản, mà lồng ghép vào
-                        đó là những câu chuyện, những bài học ý nghĩa. Từ đó
-                        giúp người tham gia hiểu được những giá trị cốt lõi mà
-                        Ban lãnh đạo muốn truyền đạt từ ss đó là cải thiện hiệu
-                        suất làm việc, tháo gỡ những khúc mắc trong quá trình
-                        làm việc, tạo thành một khối đại đoàn kết tập thể đưa
-                        doanh nghiệp phát triển vượt bậc hơn trong tương lai.
+                        đó là những câu chuyện, những bài học ý nghĩa.
+                    </p>
+                    <p>
+                        Thông qua việc này, người tham gia sẽ hiểu rõ những giá
+                        trị cốt lõi mà Ban lãnh đạo mong muốn truyền đạt, như
+                        cải thiện hiệu suất làm việc, giải quyết các vấn đề xuất
+                        hiện trong quá trình làm việc và xây dựng sự đoàn kết
+                        tập thể. Tất cả những điều này đồng hành để thúc đẩy sự
+                        phát triển xuất sắc của doanh nghiệp trong tương lai.
                     </p>
                 </div>
             </section>
@@ -90,40 +93,33 @@ function Teambuilding() {
             </div>
             <section className="container teambuilding">
                 <div className="visa__title visa__line teambuilding__title teambuilding__title2">
-                    CÁC TRÒ CHƠI TEAM BUILDING
+                    TOUR TEAM BUILDING
                 </div>
                 <div className="teambuilding__desc teambuilding__desc2">
                     <p>
-                        <span>Trò chơi Teambuilding</span> đóng vai trò quan
-                        trọng trong việc xây dựng sự gắn kết và tạo môi trường
-                        làm việc tích cực trong các tổ chức và doanh nghiệp. Đây
-                        là những hoạt động tập thể hấp dẫn và thú vị, thiết kế
-                        đặc biệt để giúp các thành viên trong một nhóm hợp tác,
-                        nắm vững nguyên tắc làm việc cùng nhau, và phát triển kỹ
-                        năng quan trọng như lắng nghe, trò chuyện, và giải quyết
-                        vấn đề. Trò chơi Teambuilding có thể bao gồm nhiều loại
-                        hoạt động, từ các trò chơi tập thể trong nhà đến các
-                        cuộc thi thể thao ngoài trời, và thậm chí là những cuộc
-                        phiêu lưu trong thiên nhiên.
+                        Team building là hoạt động kết hợp giữa du lịch và xây
+                        dựng mối quan hệ, tương tác giữa các thành viên trong
+                        doanh nghiệp, các Khoa, các lớp trong hệ thống giảng
+                        dạy.
                     </p>
                     <p>
-                        Đến với <span>DingDing Travel</span> để cùng chúng tôi
-                        thiết kế nên những trò chơi Teambuilding hấp dẫn nhất,
-                        thú vị và độc lạ nhất cho công ty của bạn.
+                        Trong mỗi chương trình team building của DingDing
+                        travel, các đội nhóm sẽ cùng nhau tham gia vào các hoạt
+                        động như chơi trò chơi, khám phá điểm đến, các hoạt động
+                        giải trí, thể thao đồng đội, tham quan thắng cảnh, hoặc
+                        thực hiện các hoạt động tình nguyện vì cộng đồng
                     </p>
                     <p>
-                        Các trò chơi Teambuiding ngoài trời là chuỗi trò chơi
-                        liên hoàn cho các đội trong đoàn lớn được xem như bài
-                        tập, vừa giúp rèn luyện sức khỏe, vừa gắn kết các nhóm
-                        và vừa là cơ hội để mỗi nhóm tự tỏa sáng theo cách riêng
-                        của mình. Những trò chơi này thường đòi hỏi các thành
-                        viên phải có sức mạnh và sức bền, tinh thần hợp tác và
-                        trách nhiệm để hoàn thành nhiệm vụ. Các trò chơi team
-                        building ngoài trời này giúp đội nhóm trau dồi rất nhiều
-                        các kỹ năng cần thiết như: kỹ năng hợp tác, giải quyết
-                        vấn đề và xử lý xung đột. Nếu muốn đi nhanh hãy đi một
-                        mình, nhưng để đi xa thì nhất định phải đi cùng đồng
-                        đội.
+                        Mục tiêu đề ra của mỗi chương trình Team building – Gala
+                        của DingDing travel không đơn thuần là giúp người chơi
+                        vượt qua thử thách, hay có một buổi tiệc vui chơi đơn
+                        giản, mà lồng ghép vào đó là những câu chuyện, những bài
+                        học ý nghĩa. Từ đó giúp người tham gia hiểu được những
+                        giá trị cốt lõi mà Ban lãnh đạo muốn truyền đạt từ ss đó
+                        là cải thiện hiệu suất làm việc, tháo gỡ những khúc mắc
+                        trong quá trình làm việc, tạo thành một khối đại đoàn
+                        kết tập thể đưa doanh nghiệp phát triển vượt bậc hơn
+                        trong tương lai.
                     </p>
                 </div>
                 <div className="teambuilding__game">
@@ -161,17 +157,9 @@ function Teambuilding() {
             </section>
             <section className="container teambuilding">
                 <div className="visa__title visa__line teambuilding__title">
-                    DU LỊCH TEAM BUILDING CÙNG DINGDING TRAVEL & EVENTS
+                    EVENTS - MEETING - GALA DINNER
                 </div>
-                <div className="teambuilding__desc">
-                    <p>
-                        Công ty DingDing Travel & Events đồng thời là đơn vị
-                        chuyên tổ chức sự kiện, hội thảo và các chuyến du lịch
-                        trong và ngoài nước cho các doanh nghiệp và tổ chức. Quy
-                        trình và cách thức tổ chức tour du lịch Team Building
-                        cho doanh nghiệp của chúng tôi như sau.
-                    </p>
-                </div>
+
                 <div className="chooseus__wrapper teambuilding__steps">
                     <div className="chooseus__item teambuilding__steps-item">
                         <IoChatbubblesSharp className="chooseus__icon teambuilding__steps-icon" />

@@ -20,32 +20,33 @@ function Introduce() {
                 </div>
                 <div className="introduce__content">
                     <div className="introduce__content-top">
-                        DingDing Travel là một dựng danh tiếng vững chắc trong
-                        suốt gần 10 năm hoạt động.
+                        Công ty TNHH TƯ VẤN VÀ CUNG ỨNG DINGDING - Tên Tiếng
+                        Anh: DINGDING SUPLY AND CONSULTING COMPANY LIMITED.
                     </div>
                     <div className="introduce__content-main">
                         <p>
-                            Chúng tôi hoạt động đa dạng trong lĩnh vực vận tải,
-                            du thuyền, du lịch, nhà hàng và khách sạn. DingDing
-                            Travel tập trung vào việc cung cấp trải nghiệm sang
-                            trọng và cá nhân hóa.
+                            Công ty TNHH TƯ VẤN VÀ CUNG ỨNG DING DING , viết tắt
+                            là DingDing Travel, là công ty du lịch hàng đầu với
+                            các tour chuyên nghiệp theo tiêu chuẩn quốc tế.
                         </p>
                         <p>
-                            Chúng tôi tự hào mang đến các kỳ nghỉ độc đáo với
-                            nhiều chủ đề khác nhau, tổ chức sự kiện cho doanh
-                            nghiệp và cá nhân quan trọng, cũng như phục vụ những
-                            người nổi tiếng trong nước và nhóm nhỏ những lữ
-                            khách. Khám phá, thư giãn và tiếp xúc với di sản văn
-                            hóa và thiên nhiên luôn là ưu tiên hàng đầu.
+                            Ding Ding travel là công ty cung ứng dịch vụ về du
+                            lịch lữ hành được thành lập năm 2016, trải qua hơn 7
+                            năm phát triển, công ty không ngừng nỗ lực phát
+                            triển và khẳng định vị trí thương hiệu không chỉ ở
+                            phạm vi trong nước mà còn mở rộng ra thị trường quốc
+                            tế.
                         </p>
 
                         <p>
-                            Chúng tôi cam kết mang đến trải nghiệm du lịch độc
-                            đáo và đáng nhớ, luôn sáng tạo để chạm đến cảm xúc
-                            của khách hàng và đảm bảo 100% hài lòng tuyệt đối.
-                            Đội ngũ chuyên gia du lịch cao cấp của chúng tôi
-                            luôn sẵn sàng tư vấn 24/7. Hãy liên hệ ngay để nhận
-                            sự hỗ trợ tận tâm!
+                            Trong thị trường vô số các công ty du lịch đầy cạnh
+                            tranh hiện nay DingDing Travel vẫn được đông đảo quý
+                            khách hàng tin yêu lựa chọn nhờ tinh thần tận tâm,
+                            chất lượng phục vụ được đặt lên hàng đầu, đa dạng
+                            loại hình du lịch từ: du lịch trong nước, du lịch
+                            nước ngoài, trải nghiệm học tập, nghỉ dưỡng cho đến
+                            du lịch hành hương, du lịch được kết hợp cùng team
+                            building, gala dinner,…
                         </p>
                     </div>
                 </div>
