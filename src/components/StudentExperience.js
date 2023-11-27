@@ -71,6 +71,7 @@ function StudentExperiencePage() {
                         <a
                             href="https://www.facebook.com/messages/t/1848020962149796"
                             target="_blank"
+                            className="visa__button-advise"
                         >
                             <button className="visa__button">
                                 Liên Hệ Tư Vấn
