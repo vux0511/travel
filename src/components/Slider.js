@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper/modules";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import Banner1 from "../assets/Banner1.jpeg";
 import Banner2 from "../assets/Banner2.jpeg";
 
@@ -18,8 +18,12 @@ function Slider() {
                     clickable: true,
                     className: "nav-btn",
                 }}
+                autoplay={{
+                    delay: 3500,
+                    disableOnInteraction: false,
+                }}
                 navigation={true}
-                modules={[Pagination, Navigation]}
+                modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper"
             >
                 <SwiperSlide>

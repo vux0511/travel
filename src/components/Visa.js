@@ -146,7 +146,6 @@ function Visa() {
                     />
                 </div>
             </div>
-            ;
         </div>
     );
 }

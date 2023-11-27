@@ -11,7 +11,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 function ProfilePage() {
     return (
@@ -23,12 +23,16 @@ function ProfilePage() {
                     ĐÁNH GIÁ KHÁCH HÀNG
                 </div>
                 <Swiper
+                    autoplay={{
+                        delay: 4000,
+                        disableOnInteraction: false,
+                    }}
                     navigation={true}
                     pagination={true}
                     slidesPerView={3}
                     spaceBetween={30}
                     loop="true"
-                    modules={[Navigation, Pagination]}
+                    modules={[Autoplay, Pagination, Navigation]}
                     className="mySwiper"
                     breakpoints={{
                         0: {

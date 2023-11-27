@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { Pagination, Navigation } from "swiper/modules";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 
 function Tours({ title, desc }) {
     return (
@@ -18,12 +18,16 @@ function Tours({ title, desc }) {
                 <div className="tours__wrapper"></div>
             </div>
             <Swiper
+                autoplay={{
+                    delay: 4000,
+                    disableOnInteraction: false,
+                }}
                 navigation={true}
                 pagination={true}
                 slidesPerView={3}
                 spaceBetween={30}
                 loop="true"
-                modules={[Navigation, Pagination]}
+                modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper"
                 breakpoints={{
                     0: {
