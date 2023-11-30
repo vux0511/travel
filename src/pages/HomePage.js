@@ -10,8 +10,33 @@ import ChooseUs from "../components/ChooseUs";
 import Brand from "../components/Brand";
 import Contact from "../components/Contact";
 import Vision from "../components/Vision";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import URL from "../api/URL";
+import { useNavigate, useParams } from "react-router-dom";
 
 function Home() {
+    const [tours, setTours] = useState([]);
+    const [category, setCategory] = useState([]);
+    const [topTours, setTopTours] = useState([]);
+    const [newTours, setNewTours] = useState([]);
+    const navigate = useNavigate();
+    const { categoryId } = useParams();
+
+    // Top Tourss
+    useEffect(() => {
+        axios.get(URL.URL_getTopTour).then((response) => {
+            setTopTours(response.data);
+        });
+    }, []);
+
+    // NEW Tourss
+    useEffect(() => {
+        axios.get(URL.URL_getNewTour).then((response) => {
+            setNewTours(response.data);
+        });
+    }, []);
+
     return (
         <>
             <Header />
@@ -22,10 +47,12 @@ function Home() {
                 desc={
                     "ĐƯỢC TUYỂN CHỌN BỞI CÁC CHUYÊN GIA DU LỊCH CỦA CHÚNG TÔI"
                 }
+                topTours={topTours}
             />
             <Tours
-                title={"Tour Trong Nước Nổi Bật"}
-                desc={"ĐƯỢC KHÁCH HÀNG LỰA CHỌN NHIỀU NHẤT NĂM 2023"}
+                title={"Tour Mới Nhất"}
+                desc={"TỔNG HỢP NHỮNG TOUR MỚI NHẤT CỦA 2023"}
+                topTours={newTours}
             />
             <Steps />
             <Introduce />

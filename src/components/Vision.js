@@ -44,11 +44,10 @@ function Vision() {
                         <div className="vision__info">
                             <div className="vision__title">GIÁ TRỊ CỐT LÕI</div>
                             <div className="vision__desc">
-                                Giá trị cốt lõi của DingDing Travel nằm ở cam
-                                kết mang lại trải nghiệm du lịch độc đáo và
-                                không quên cho khách hàng. Là người bạn đồng
-                                hành tận tâm, luôn lắng nghe và đáp ứng mọi mong
-                                muốn của du khách.
+                                DingDing Travel mang lại trải nghiệm du lịch “
+                                độc đáo và ấn tượng khó quên “ cho khách hàng.
+                                Là người bạn đồng hành tận tâm, luôn lắng nghe
+                                và đáp ứng mọi mong muốn của du khách.
                             </div>
                         </div>
                     </div>

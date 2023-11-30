@@ -28,7 +28,31 @@
         margin-top: 60px;
     }
 }
-
+.tour__trongnuoc {
+    margin-top: 180px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    p {
+        line-height: 28px;
+        font-weight: 300;
+        font-size: 17px;
+        span {
+            font-weight: 500;
+            font-size: 18px;
+        }
+    }
+    .visa__line.tour__trongnuoc-title {
+        font-size: 28px;
+        font-weight: 500;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin-bottom: 30px;
+        color: $green-primary;
+    }
+}
 @media screen and (max-width: 767.98px) {
     .tours {
         &__header {
@@ -39,5 +63,12 @@
             font-size: 14px;
             line-height: 22px;
         }
+    }
+    .tour__trongnuoc {
+        margin-top: 90px;
+    }
+    .visa__line.tour__trongnuoc-title {
+        font-size: 23px;
+        font-weight: 500;
     }
 }

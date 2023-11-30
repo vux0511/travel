@@ -134,35 +134,6 @@ function Profile() {
                                     Âu, Châu Úc và Mỹ,… Là đối tác thường xuyên
                                     của hơn 30 tập đoàn.
                                 </p>
-                                <p>
-                                    <FaArrowRightLong className="profile__icon" />
-                                    Châu Á vốn nổi tiếng là châu lục có nhiều
-                                    quốc gia đa văn hóa, sở hữu những nét độc
-                                    đáo riêng biệt, khí hâu nhiệt đới đặc trưng.
-                                    Bạn có thể đắm chìm trong vẻ đẹp của mùa thu
-                                    Hàn Quốc, khám phá di sản lịch sử ở Ấn Độ,
-                                    và thử ẩm thực đa dạng tại Nhật Bản…
-                                </p>
-                                <p>
-                                    <FaArrowRightLong className="profile__icon" />
-                                    Châu Âu với vẻ đẹp kiến trúc lịch sử, lối
-                                    sống đẳng cấp và ẩm thực độc đáo, là một
-                                    điểm đến yêu thích của nhiều người. Du khách
-                                    sẽ được khám phá những điểm đến nổi tiếng
-                                    tại “lục địa già”: Paris lãng mạn ở Pháp, mỹ
-                                    phẩm thiên nhiên ở Thụy Điển, hoặc khám phá
-                                    sự pha trộn văn hóa ở Thổ Nhĩ Kỳ hay kinh đô
-                                    thời trang ở Italia.
-                                </p>
-                                <p>
-                                    <FaArrowRightLong className="profile__icon" />
-                                    Châu Mỹ và Châu Úc cũng đang chờ đợi bạn với
-                                    những cảnh quan thiên nhiên tuyệt đẹp và cơ
-                                    hội trải nghiệm cuộc sống hoang dã. Đắm chìm
-                                    tại nước Mỹ xinh đẹp, Canada lãng mạn hay
-                                    tìm hiểu về đời sống thú vị của người dân
-                                    Cuba, xứ sở “Chuột Túi” Australia,…
-                                </p>
                             </div>
                         </div>
                     </div>

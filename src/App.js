@@ -10,22 +10,41 @@ import StudentExperiencePage from "./pages/StudentExperiencePage";
 import ProfilePage from "./pages/ProfilePage";
 import AboutPage from "./pages/AboutPage";
 import InternationalStudentPage from "./pages/InternationalStudentPage";
+import AdminPage from "./components/Admin/Admin";
+import EditTour from "./components/Admin/Tour/EditTour";
+import AddTour from "./components/Admin/Tour/AddTour";
+import ViewTour from "./components/Admin/Tour/ViewTour";
+import FlowerPage from "./pages/FlowerPage";
+import LoginAdmin from "./components/Admin/LoginAdmin";
 
 function App() {
     return (
         <div className="wrapper">
             <Routes>
                 <Route path="/" element={<HomePage />} />
+                <Route path="/admin" element={<AdminPage />} />
+                <Route path="/admin/login" element={<LoginAdmin />} />
+                <Route path="/admin/tour/add" element={<AddTour />} />
+                <Route path="/admin/tour/view" element={<ViewTour />} />
+                <Route path="/admin/tour/edit/:idTour" element={<EditTour />} />
                 <Route path="/tour-trong-nuoc" element={<TourInVietNam />} />
+                <Route
+                    path="/tour-trong-nuoc/category/:idCategory"
+                    element={<TourInVietNam />}
+                />
                 <Route path="/tour-nuoc-ngoai" element={<ForeignTour />} />
                 <Route path="/dich-vu-visa" element={<VisaPage />} />
+                <Route path="/hoa-tuoi" element={<FlowerPage />} />
                 <Route path="/thue-xe" element={<RentCarPage />} />
                 <Route path="/ho-so-nang-luc" element={<ProfilePage />} />
                 <Route
                     path="/teambuilding-event"
                     element={<TeambuildingPage />}
                 />
-                <Route path="/detail-tour/:id" element={<DetailTourPage />} />
+                <Route
+                    path="/detail-tour/idTour/:idTour"
+                    element={<DetailTourPage />}
+                />
                 <Route path="/gioi-thieu" element={<AboutPage />} />
                 <Route
                     path="/trai-nghiem-sinh-vien"

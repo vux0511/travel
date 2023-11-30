@@ -1,12 +1,33 @@
+import ToursCard from "./TourCard";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import { IoChatbubblesSharp } from "react-icons/io5";
 import { MdTravelExplore } from "react-icons/md";
-import { FcIdea } from "react-icons/fc";
 import { HiMiniUserGroup } from "react-icons/hi2";
 import { MdHealthAndSafety } from "react-icons/md";
 import { VscFeedback } from "react-icons/vsc";
 import { LiaBrainSolid } from "react-icons/lia";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import URL from "../api/URL";
 
 function StudentExperiencePage() {
+    const [tourFieldTrip, setTourFieldTrip] = useState([]);
+    const [dataForm, setDataForm] = useState({});
+
+    const handle = () => {
+        console.log(dataForm);
+    };
+    // Get Tours Field Trip
+    useEffect(() => {
+        axios.get(URL.URL_getTourFieldTrip).then((response) => {
+            setTourFieldTrip(response.data);
+        });
+    }, []);
+
     return (
         <div className="wrapper">
             <img
@@ -80,17 +101,46 @@ function StudentExperiencePage() {
                     </div>
                 </div>
                 <section className="container teambuilding ">
-                    <div className="visa__title visa__line teambuilding__title studentexperience__title">
+                    <div className="visa__title visa__line">
                         TỔ CHỨC TOUR KIẾN TẬP CHO HỌC SINH SINH VIÊN CÙNG
                         DINGDING TRAVEL
                     </div>
                     <div className="teambuilding__desc">
-                        <p>1.Nhóm ngành Tài Chính – Ngân Hàng</p>
-                        <p>2.Nhóm ngành Kinh Tế - Kế Toán</p>
-                        <p>3. Nhóm ngành Thông Tin </p>
-                        <p>4. Nhóm ngành Quản trị kinh doanh – Dịch vụ</p>
-                        <p>5. Nhóm ngành Luật </p>
-                        <p>6. Nhóm ngành Thời trang</p>
+                        <p className="teambuilding__desc-content">
+                            DingDing là đối tác tin cậy của các trường Đại Học,
+                            các Khoa và bộ môn với nhiều kinh nghiệm kết nối, tổ
+                            chức chương trình kiến tập cho sinh viên với chất
+                            lượng cao và đa dạng nhóm ngành học. Chúng tôi tự
+                            hào là đơn vị đã hợp tác thành công với nhiều tổ
+                            chức doanh nghiệp, viện nghiên cứu và trường đại
+                            học, tạo ra cơ hội học tập và trải nghiệm giữa sinh
+                            viên và doanh nghiệp.
+                        </p>
+                    </div>
+                    <div className="teambuilding__desc teambuilding__branch">
+                        <div className="teambuilding__branch-item">
+                            <p>
+                                <span>1.</span>Nhóm ngành Tài Chính – Ngân Hàng
+                            </p>
+                            <p>
+                                <span>2.</span>Nhóm ngành Kinh Tế - Kế Toán
+                            </p>
+                            <p>
+                                <span>3.</span>Nhóm ngành Thông Tin{" "}
+                            </p>
+                        </div>
+                        <div className="teambuilding__branch-item">
+                            <p>
+                                <span>4.</span>Nhóm ngành Quản trị kinh doanh –
+                                Dịch vụ
+                            </p>
+                            <p>
+                                <span>5.</span>Nhóm ngành Luật{" "}
+                            </p>
+                            <p>
+                                <span>6.</span>Nhóm ngành Thời trang
+                            </p>
+                        </div>
                     </div>
                     <div className="chooseus__wrapper teambuilding__steps">
                         <div className="chooseus__item teambuilding__steps-item">
@@ -183,6 +233,48 @@ function StudentExperiencePage() {
                         </div>
                     </div>
                 </section>
+                <div className="visa__title visa__line teambuilding__title studentexperience__title">
+                    DANH SÁCH TOUR FIELD TRIP
+                </div>
+                <Swiper
+                    autoplay={{
+                        delay: 4000,
+                        disableOnInteraction: false,
+                    }}
+                    navigation={true}
+                    pagination={true}
+                    slidesPerView={3}
+                    spaceBetween={30}
+                    loop="true"
+                    modules={[Autoplay, Pagination, Navigation]}
+                    className="mySwiper"
+                    breakpoints={{
+                        0: {
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                        },
+                        640: {
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+                        },
+                    }}
+                >
+                    {tourFieldTrip.map((tour, index) => (
+                        <SwiperSlide key={index}>
+                            <a href={`/detail-tour/idTour/${tour.idTour}`}>
+                                <ToursCard tourCard={tour} />
+                            </a>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
             </div>
         </div>
     );

@@ -33,11 +33,11 @@
         border-radius: 6px 6px 0 0;
     }
     &__name {
-        align-self: center !important;
+        width: 100%;
         font-size: 16px;
         line-height: 26px;
         display: -webkit-box;
-        -webkit-line-clamp: 2;
+        -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -48,6 +48,7 @@
         }
     }
     &__info {
+        width: 100%;
         padding: 16px;
         display: flex;
         flex-direction: column;

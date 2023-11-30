@@ -1,5 +1,5 @@
 .category {
-    margin-top: 180px;
+    margin-top: 40px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -40,10 +40,37 @@
         align-items: center;
         // background-color: red;
         margin-left: -20px;
+        &-title {
+            font-size: 28px;
+            padding: 20px;
+        }
+        &-desc {
+            padding: 0 20px 20px;
+            line-height: 26px;
+            font-weight: 300;
+        }
     }
     &__card {
         width: calc(100% / 3 - 20px);
         margin-left: 20px;
         margin-bottom: -20px;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .category {
+        flex-direction: column;
+        &__list,
+        &__item {
+            width: 100%;
+        }
+        &__item {
+            flex-direction: column;
+            width: 100%;
+        }
+        &__card {
+            width: 100%;
+            margin-bottom: 0px;
+        }
     }
 }

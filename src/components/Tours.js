@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 
-function Tours({ title, desc }) {
+function Tours({ title, desc, topTours, newTours }) {
     return (
         <div className="container">
             <div className="tours">
@@ -48,24 +48,13 @@ function Tours({ title, desc }) {
                     },
                 }}
             >
-                <SwiperSlide>
-                    <ToursCard />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <ToursCard />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <ToursCard />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <ToursCard />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <ToursCard />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <ToursCard />
-                </SwiperSlide>
+                {topTours.map((tour, index) => (
+                    <SwiperSlide>
+                        <a href={`/detail-tour/idTour/${tour.idTour}`}>
+                            <ToursCard tourCard={tour} />
+                        </a>
+                    </SwiperSlide>
+                ))}
             </Swiper>
             <button className="button button-primary">
                 Xem Thêm <FaArrowRightLong />

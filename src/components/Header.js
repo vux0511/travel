@@ -52,7 +52,7 @@ function Header() {
                             </li>
                             <li>
                                 <a
-                                    href="tour-trong-nuoc"
+                                    href="/tour-trong-nuoc/category/1"
                                     className="desktop-item"
                                 >
                                     TOUR TRONG NƯỚC
@@ -66,23 +66,32 @@ function Header() {
                                 </label>
                                 <ul className="drop-menu">
                                     <li>
-                                        <a href="#">Tour Miền Bắc</a>
+                                        <a href="/tour-trong-nuoc/category/1">
+                                            Tour Miền Bắc
+                                        </a>
                                     </li>
                                     <li>
-                                        <a href="#">Tour Miền Nam</a>
+                                        <a href="/tour-trong-nuoc/category/2">
+                                            Tour Miền Nam
+                                        </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="/tour-trong-nuoc/category/3">
                                             Tour Tây Nguyên & Biển Đảo
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">Tour Di Sản Miền Trung</a>
+                                        <a href="/tour-trong-nuoc/category/4">
+                                            Tour Di Sản Miền Trung
+                                        </a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#" className="desktop-item">
+                                <a
+                                    href="/tour-trong-nuoc/category/5"
+                                    className="desktop-item"
+                                >
                                     TOUR NƯỚC NGOÀI
                                 </a>
                                 <input type="checkbox" id="showDrop2" />
@@ -94,16 +103,24 @@ function Header() {
                                 </label>
                                 <ul className="drop-menu2">
                                     <li>
-                                        <a href="#">Tour Châu Á</a>
+                                        <a href="/tour-trong-nuoc/category/5">
+                                            Tour Châu Á
+                                        </a>
                                     </li>
                                     <li>
-                                        <a href="#">Tour Châu Âu</a>
+                                        <a href="/tour-trong-nuoc/category/6">
+                                            Tour Châu Âu
+                                        </a>
                                     </li>
                                     <li>
-                                        <a href="#">Tour Châu Úc</a>
+                                        <a href="/tour-trong-nuoc/category/7">
+                                            Tour Châu Úc
+                                        </a>
                                     </li>
                                     <li>
-                                        <a href="#">Tour Châu Mỹ</a>
+                                        <a href="/tour-trong-nuoc/category/8">
+                                            Tour Châu Mỹ
+                                        </a>
                                     </li>
                                 </ul>
                             </li>
@@ -152,7 +169,10 @@ function Header() {
                                         <a href="/thue-xe">THUÊ XE</a>
                                     </li>
                                     <li>
-                                        <a href="/dich-vu-visa">DICH VU VISA</a>
+                                        <a href="/hoa-tuoi">HOA TƯƠI</a>
+                                    </li>
+                                    <li>
+                                        <a href="/dich-vu-visa">DỊCH VỤ VISA</a>
                                     </li>
                                 </ul>
                             </li>

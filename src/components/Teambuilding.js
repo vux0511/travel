@@ -160,92 +160,39 @@ function Teambuilding() {
                     EVENTS - MEETING - GALA DINNER
                 </div>
 
-                <div className="chooseus__wrapper teambuilding__steps">
-                    <div className="chooseus__item teambuilding__steps-item">
-                        <IoChatbubblesSharp className="chooseus__icon teambuilding__steps-icon" />
-                        <div className="chooseus__title teambuilding__steps-title">
-                            1. Thảo luận nhu cầu của khách hàng
-                        </div>
-                        <div className="chooseus__desc teambuilding__steps-desc">
-                            Trước khi tổ chức tour du lịch team building, Image
-                            Travel & Events sẽ trao đổi và phân tích nhu cầu của
-                            khách hàng. Chúng tôi sẽ tìm hiểu kỹ mục đích của
-                            việc tổ chức team building, số lượng người tham gia,
-                            độ tuổi, sức khỏe và sở thích chung của các thành
-                            viên.
-                        </div>
-                    </div>
-                    <div className="chooseus__item teambuilding__steps-item">
-                        <MdTravelExplore className="chooseus__icon teambuilding__steps-icon" />
-                        <div className="chooseus__title teambuilding__steps-title">
-                            2. Lựa chọn địa điểm và thiết kế phù hợp
-                        </div>
-                        <div className="chooseus__desc teambuilding__steps-desc">
-                            DingDing Travel & Events sẽ cùng quý khách lựa chọn
-                            địa điểm phù hợp nhất với nhu cầu và ngân sách của
-                            mình để tổ chức tour du lịch team building. Đội ngũ
-                            thiết kế của chúng tôi sẽ lên ý tưởng, concept,
-                            banner, hashtag và clip kỷ niệm mang màu sắc riêng
-                            của quý DN.
-                        </div>
-                    </div>
-                    <div className="chooseus__item teambuilding__steps-item">
-                        <LiaBrainSolid className="chooseus__icon teambuilding__steps-icon" />
-                        <div className="chooseus__title teambuilding__steps-title">
-                            3. Lên ý tưởng các hoạt động team building
-                        </div>
-                        <div className="chooseus__desc teambuilding__steps-desc">
-                            DingDing Travel & Events tư vấn và thiết kế riêng
-                            kịch bản các hoạt động du lịch team building phù hợp
-                            với nhu cầu của từng khách hàng. Các hoạt động này
-                            có thể là các trò chơi, hoạt động thể thao, game trí
-                            tuệ, hoạt động xã hội, hoạt động du lịch có trách
-                            nhiệm…
-                        </div>
-                    </div>
-                    <div className="chooseus__item teambuilding__steps-item">
-                        <HiMiniUserGroup className="chooseus__icon teambuilding__steps-icon" />
-                        <div className="chooseus__title teambuilding__steps-title">
-                            4. Cung cấp phương tiện và đội ngũ
-                        </div>
-                        <div className="chooseus__desc teambuilding__steps-desc">
-                            DingDing Travel & Events chuẩn bị, cung cấp các
-                            thiết bị, đạo cụ và phương tiện cần thiết để tổ chức
-                            các hoạt động tour du lịch team building : dụng cụ
-                            chơi các trò chơi, thiết bị thể thao và các phương
-                            tiện di chuyển, âm thanh, ánh sáng, MC và hướng dẫn
-                            viên chuyên nghiệp.
-                        </div>
-                    </div>
-                    <div className="chooseus__item teambuilding__steps-item">
-                        <MdHealthAndSafety className="chooseus__icon teambuilding__steps-icon" />
-                        <div className="chooseus__title teambuilding__steps-title">
-                            5. Đảm bảo an toàn và bảo hiểm
-                        </div>
-                        <div className="chooseus__desc teambuilding__steps-desc">
-                            DingDing Travel & Events luôn khảo sát địa điểm và
-                            các hoạt động trước khi bắt đầu tổ chức để đảm bảo
-                            hoạt động du lịch team building diễn ra thuận lợi và
-                            an toàn. Gói bảo hiểm du lịch cũng được kèm theo
-                            tour để đảm bảo quý khách luôn được bảo vệ trong
-                            trường hợp có sự cố xảy ra.
-                        </div>
-                    </div>
-                    <div className="chooseus__item teambuilding__steps-item">
-                        <VscFeedback className="chooseus__icon teambuilding__steps-icon" />
-                        <div className="chooseus__title teambuilding__steps-title">
-                            6. Đánh giá và phản hồi
-                        </div>
-                        <div className="chooseus__desc teambuilding__steps-desc">
-                            Sau khi hoàn thành một tour du lịch team building,
-                            DingDing Travel & Events sẽ thu thập phản hồi từ
-                            khách hàng và các thành viên trong nhóm để đánh giá
-                            hiệu quả của chương trình. Điều này giúp công ty cải
-                            thiện và tăng cường chất lượng dịch vụ của mình
-                            trong tương lai.
-                        </div>
-                    </div>
+                <div className="teambuilding__game">
+                    <img
+                        src="https://images.unsplash.com/photo-1627241129356-137242cf14f0?q=80&w=2734&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Teambuilding Game"
+                        className="teambuilding__game-image"
+                    />
+                    <img
+                        src="https://images.unsplash.com/photo-1628048541470-45db71ac1244?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Teambuilding Game"
+                        className="teambuilding__game-image"
+                    />
+                    <img
+                        src="https://images.unsplash.com/photo-1566140967404-b8b3932483f5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Teambuilding Game"
+                        className="teambuilding__game-image"
+                    />
+                    <img
+                        src="https://images.unsplash.com/photo-1517164850305-99a3e65bb47e?q=80&w=2322&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Teambuilding Game"
+                        className="teambuilding__game-image"
+                    />
+                    <img
+                        src="https://images.unsplash.com/photo-1606092195808-3107b7ed4c98?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Teambuilding Game"
+                        className="teambuilding__game-image"
+                    />
+                    <img
+                        src="https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Teambuilding Game"
+                        className="teambuilding__game-image"
+                    />
                 </div>
+
                 <div className="visa__item teambuilding__advise">
                     <img
                         src="https://images.unsplash.com/photo-1542637297-1318423100cf?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
