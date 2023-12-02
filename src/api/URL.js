@@ -1,4 +1,4 @@
-const URL = "http://localhost/Travel_API/api";
+const URL = "https://vu05.id.vn/Travel_API/api";
 
 export default {
     URL_getTourCard: URL + "/getTourCard.php",
