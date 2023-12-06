@@ -32,7 +32,6 @@ function TourInVietNam() {
             .then((res) => {
                 if (res.data) {
                     setCategory(res.data);
-                    console.log(res.data);
                 }
             });
     }, [params]);

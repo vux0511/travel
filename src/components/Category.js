@@ -35,7 +35,6 @@ function Category() {
             .then((res) => {
                 if (res.data) {
                     setTourCards(res.data);
-                    console.log(res.data);
                 }
             });
     }, [params]);

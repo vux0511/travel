@@ -1,5 +1,6 @@
 import Sidebar from "../Sidebar";
-import { useEffect, useState } from "react";
+import React, { useState, useRef, useMemo, useEffect } from "react";
+
 import { GrMenu } from "react-icons/gr";
 import { IoSearch } from "react-icons/io5";
 import axios from "axios";
@@ -8,6 +9,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+import JoditEditor from "jodit-react";
 
 function AddTour() {
     const notify = () => toast();
@@ -22,6 +24,8 @@ function AddTour() {
     const [imageTour2, setImageTour2] = useState("");
     const [imageTour3, setImageTour3] = useState("");
     const [imageTour4, setImageTour4] = useState("");
+    const editor = useRef(null);
+    const [content, setContent] = useState("");
 
     const handleChangeNameTour = (e) => {
         setNameTour(e.target.value);
@@ -87,10 +91,8 @@ function AddTour() {
             imageTour3: imageTour3,
             imageTour4: imageTour4,
         };
-        console.log(data);
 
         axios.post(URL.URL_addNewTour, data).then((response) => {
-            console.log(response);
             if (response.data.status === "success") {
                 toast.success("Thêm sản phẩm thành công", {
                     position: "top-right",
@@ -233,7 +235,7 @@ function AddTour() {
                     </div>
                     <div className="editTour__editer">
                         <p className="desc__tour">Mô tả Tour:</p>
-                        <CKEditor
+                        {/* <CKEditor
                             editor={ClassicEditor}
                             data="Nhập mô tả tour..."
                             onReady={(editor) => {
@@ -245,6 +247,14 @@ function AddTour() {
                             }}
                             onBlur={(event, editor) => {}}
                             onFocus={(event, editor) => {}}
+                        />
+                         */}
+                        <JoditEditor
+                            ref={editor}
+                            value={content}
+                            tabIndex={1}
+                            onBlur={(dataForm) => setDataForm(dataForm)}
+                            onChange={(dataForm) => {}}
                         />
                         <button
                             className="button button-primary button-edit"

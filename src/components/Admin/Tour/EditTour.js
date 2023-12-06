@@ -115,14 +115,12 @@ function EditTour() {
 
     const handleEdit = (e) => {
         e.preventDefault();
-        console.log(itemTourEdit);
         const fullData = itemTourEdit;
         fullData.descTour = dataForm;
         // let data = itemProductEdit;
         // data.id = idProduct;
 
         axios.post(URL.URL_editTour, fullData).then((response) => {
-            console.log(response.data);
             if (response.data.status === "success") {
                 toast.success("Sửa thành công", {
                     position: "top-right",

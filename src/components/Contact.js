@@ -2,57 +2,35 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 function Contact() {
     return (
-        <section className="wrapper contact">
-            <div className="contact__subscriber">
-                <div className="contact__title">ĐĂNG KÍ THEO DÕI</div>
-                <div className="contact__desc">
-                    Để lại email đăng kí theo dõi chúng tôi để nhận được ưu đãi
-                    sớm nhất qua email.
+        <section className="container introduce">
+            <img
+                src="https://images.unsplash.com/photo-1606801954050-be6b29588460?q=80&w=2180&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                className="introduce__image"
+            />
+            <div className="introduce__info">
+                <div className="introduce__header">
+                    <div className="introduce__header-desc">LIÊN HỆ</div>
+                    <div className="introduce__header-title">
+                        CÔNG TY TNHH TMDV DU LỊCH OCEAN
+                    </div>
+                    <div className="introduce__header-desc-yellow">
+                        CHẠM VÀO CẢM XÚC
+                    </div>
                 </div>
-                <form action="#" className="contact__form">
-                    <input type="text" className="contact__input" />
-                    <button className="button button-primary">
-                        Đăng Ký <FaArrowRightLong />
-                    </button>
-                </form>
-            </div>
-            <div className="contact__care">
-                <div className="contact__title">24/7 CHĂM SÓC KHÁCH HÀNG</div>
-                <div className="contact__desc">
-                    Hotline và kênh chat online của chúng tôi hoạt động 24/7 để
-                    tư vấn & giải đáp thắc mắc của khách hàng. Đừng ngại liên hệ
-                    ngay nhé.
+                <div className="introduce__content">
+                    <div className="introduce__content-top">LIÊN HỆ</div>
+                    <div className="introduce__content-main">
+                        <p>
+                            Công ty TNHH TƯ VẤN VÀ CUNG ỨNG DING DING , viết tắt
+                            là DingDing Travel, là công ty du lịch hàng đầu với
+                            các tour chuyên nghiệp theo tiêu chuẩn quốc tế.
+                        </p>
+                    </div>
                 </div>
-                <div className="contact__image">
-                    <img
-                        src="https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/field_blog_entry_images/2018-09/shutterstock_648907024.jpg?itok=7lrLYx-B"
-                        alt=""
-                        className="contact__image-admin"
-                    />
-                    <img
-                        src="https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/field_blog_entry_images/2018-09/shutterstock_648907024.jpg?itok=7lrLYx-B"
-                        alt=""
-                        className="contact__image-admin"
-                    />
-                    <img
-                        src="https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/field_blog_entry_images/2018-09/shutterstock_648907024.jpg?itok=7lrLYx-B"
-                        alt=""
-                        className="contact__image-admin"
-                    />
-                    <img
-                        src="https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/field_blog_entry_images/2018-09/shutterstock_648907024.jpg?itok=7lrLYx-B"
-                        alt=""
-                        className="contact__image-admin"
-                    />
-                    <img
-                        src="https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/field_blog_entry_images/2018-09/shutterstock_648907024.jpg?itok=7lrLYx-B"
-                        alt=""
-                        className="contact__image-admin"
-                    />
-                </div>
-                {/* <button className="button button-primary">
-                    Liên Hệ <FaArrowRightLong />
-                </button> */}
+                <button className="button button-primary">
+                    Xem Thêm <FaArrowRightLong />
+                </button>
             </div>
         </section>
     );

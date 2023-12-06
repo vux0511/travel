@@ -18,9 +18,7 @@ function StudentExperiencePage() {
     const [tourFieldTrip, setTourFieldTrip] = useState([]);
     const [dataForm, setDataForm] = useState({});
 
-    const handle = () => {
-        console.log(dataForm);
-    };
+    const handle = () => {};
     // Get Tours Field Trip
     useEffect(() => {
         axios.get(URL.URL_getTourFieldTrip).then((response) => {

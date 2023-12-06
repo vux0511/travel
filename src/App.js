@@ -16,6 +16,7 @@ import AddTour from "./components/Admin/Tour/AddTour";
 import ViewTour from "./components/Admin/Tour/ViewTour";
 import FlowerPage from "./pages/FlowerPage";
 import LoginAdmin from "./components/Admin/LoginAdmin";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
     return (
@@ -54,6 +55,7 @@ function App() {
                     path="/sinh-vien-quoc-te"
                     element={<InternationalStudentPage />}
                 />
+                <Route path="/lien-he" element={<ContactPage />} />
                 <Route path="*" element={<InternationalStudentPage />} />
             </Routes>
         </div>

@@ -1,10 +1,13 @@
 import { MdClear } from "react-icons/md";
 import { Link } from "react-router-dom";
-import LogoLeft from "../assets/logo-left.png";
+import VietNamIcon from "../assets/vietnam-icon.png";
 import LogoMain from "../assets/logo-main.jpeg";
-import { FiPhoneCall, FiMail, FiSearch, FiMenu } from "react-icons/fi";
-import { IoMdArrowDropdown } from "react-icons/io";
-import { CgMenuLeftAlt } from "react-icons/cg";
+import WorldIcon from "../assets/world-icon.png";
+import HomeIcon from "../assets/Home-Icon.png";
+import FieldTripIcon from "../assets/field-trip-icon.png";
+import ServiceIcon from "../assets/public-service.png";
+import ContactIcon from "../assets/contact-us.png";
+import TeambuildingIcon from "../assets/team-building-icon.png";
 import { AiOutlineMenu } from "react-icons/ai";
 
 function Header() {
@@ -12,36 +15,18 @@ function Header() {
         <div className="wrapper">
             <>
                 <nav>
-                    <div className="container">
-                        <div className="header__top">
+                    <div className="wrapper">
+                        <input type="radio" name="slider" id="menu-btn" />
+                        <input type="radio" name="slider" id="close-btn" />
+                        <div>
                             <Link to="/">
                                 <img
-                                    src={LogoLeft}
+                                    src={LogoMain}
                                     alt="LogoLeft"
                                     className="header__logo-left"
                                 />
                             </Link>
-                            <Link to="/">
-                                <img
-                                    src={LogoMain}
-                                    alt="LogoMain"
-                                    className="header__logo-main"
-                                />
-                            </Link>
-                            <div className="header__contact">
-                                <div className="header__contact-phone">
-                                    <FiPhoneCall /> 0914134626
-                                </div>
-                                <div className="header__contact-email">
-                                    <FiMail /> sales@dingding.vn
-                                </div>
-                            </div>
                         </div>
-                    </div>
-                    <div className="wrapper">
-                        <div className="logo">{/* <a href="#">Logo</a> */}</div>
-                        <input type="radio" name="slider" id="menu-btn" />
-                        <input type="radio" name="slider" id="close-btn" />
                         <ul className="nav-links">
                             <label
                                 htmlFor="close-btn"
@@ -49,10 +34,40 @@ function Header() {
                             >
                                 <MdClear className="fas fa-times header__icon header__icon2" />
                             </label>
+
                             <li>
-                                <a href="/">Home</a>
+                                <img
+                                    src={HomeIcon}
+                                    alt=""
+                                    className="header__icon"
+                                />
+                                <a href="#" className="desktop-item">
+                                    VỀ DING DING
+                                </a>
+                                <input type="checkbox" id="showDrop5" />
+                                <label
+                                    htmlFor="showDrop5"
+                                    className="mobile-item"
+                                >
+                                    VỀ DING DING
+                                </label>
+                                <ul className="drop-menu5">
+                                    <li>
+                                        <a href="/gioi-thieu">GIỚI THIỆU</a>
+                                    </li>
+                                    <li>
+                                        <a href="/ho-so-nang-luc">
+                                            HỒ SƠ NĂNG LỰC
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
+                                <img
+                                    src={VietNamIcon}
+                                    alt=""
+                                    className="header__icon"
+                                />
                                 <a
                                     href="/tour-trong-nuoc/category/1"
                                     className="desktop-item"
@@ -90,6 +105,11 @@ function Header() {
                                 </ul>
                             </li>
                             <li>
+                                <img
+                                    src={WorldIcon}
+                                    alt=""
+                                    className="header__icon"
+                                />
                                 <a
                                     href="/tour-trong-nuoc/category/5"
                                     className="desktop-item"
@@ -127,15 +147,20 @@ function Header() {
                                 </ul>
                             </li>
                             <li>
+                                <img
+                                    src={FieldTripIcon}
+                                    alt=""
+                                    className="header__icon"
+                                />
                                 <a href="#" className="desktop-item">
-                                    TOUR FIELD TRIP & TTSV
+                                    FIELD TRIP
                                 </a>
                                 <input type="checkbox" id="showDrop3" />
                                 <label
                                     htmlFor="showDrop3"
                                     className="mobile-item"
                                 >
-                                    TOUR FIELD TRIP & TTSV
+                                    FIELD TRIP
                                 </label>
                                 <ul className="drop-menu3">
                                     <li>
@@ -151,23 +176,72 @@ function Header() {
                                 </ul>
                             </li>
                             <li>
-                                <a href="/teambuilding-event">
-                                    TEAMBUILDING & EVENTS
-                                </a>
+                                <img
+                                    src={TeambuildingIcon}
+                                    alt=""
+                                    className="header__icon"
+                                />
+                                <a href="/teambuilding-event">TEAMBUILDING</a>
                             </li>
                             <li>
+                                <img
+                                    src={ServiceIcon}
+                                    alt=""
+                                    className="header__icon"
+                                />
                                 <a href="#" className="desktop-item">
-                                    DỊCH VỤ CUNG ỨNG
+                                    DỊCH VỤ
                                 </a>
                                 <input type="checkbox" id="showDrop4" />
                                 <label
                                     htmlFor="showDrop4"
                                     className="mobile-item"
                                 >
-                                    DỊCH VỤ CUNG ỨNG
+                                    DỊCH VỤ
                                 </label>
                                 <ul className="drop-menu4">
                                     <li>
+                                        <a href="/">TỔ CHỨC SỰ KIỆN</a>
+                                    </li>
+                                    <li>
+                                        <a href="/hoa-tuoi">HOA TƯƠI</a>
+                                    </li>
+                                    <li>
+                                        <a href="/dich-vu-visa">LÀM VISA</a>
+                                    </li>
+                                    <li>
+                                        <a href="/dat-phong-khach-san">
+                                            ĐẶT PHÒNG KHÁCH SẠN
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/dat-ve-may-bay">
+                                            ĐẶT VÉ MÁY BAY
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/thue-xe">THUÊ XE</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img
+                                    src={ContactIcon}
+                                    alt=""
+                                    className="header__icon"
+                                />
+                                <a href="/lien-he" className="desktop-item">
+                                    LIÊN HỆ
+                                </a>
+                                <input type="checkbox" id="showDrop4" />
+                                <label
+                                    htmlFor="showDrop4"
+                                    className="mobile-item"
+                                >
+                                    LIÊN HỆ
+                                </label>
+                                <ul className="drop-menu4">
+                                    {/* <li>
                                         <a href="/thue-xe">THUÊ XE</a>
                                     </li>
                                     <li>
@@ -175,29 +249,7 @@ function Header() {
                                     </li>
                                     <li>
                                         <a href="/dich-vu-visa">DỊCH VỤ VISA</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#" className="desktop-item">
-                                    VỀ CHÚNG TÔI
-                                </a>
-                                <input type="checkbox" id="showDrop5" />
-                                <label
-                                    htmlFor="showDrop5"
-                                    className="mobile-item"
-                                >
-                                    VỀ CHÚNG TÔI
-                                </label>
-                                <ul className="drop-menu5">
-                                    <li>
-                                        <a href="/gioi-thieu">GIỚI THIỆU</a>
-                                    </li>
-                                    <li>
-                                        <a href="/ho-so-nang-luc">
-                                            HỒ SƠ NĂNG LỰC
-                                        </a>
-                                    </li>
+                                    </li> */}
                                 </ul>
                             </li>
                         </ul>

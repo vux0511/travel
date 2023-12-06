@@ -71,11 +71,9 @@ function Detail() {
             fullName: fullName,
             content: content,
         };
-        console.log(data);
         axios
             .post(`${URL.URL_addRating}?idTour=${idTour}`, data)
             .then((response) => {
-                console.log(response);
                 if (response.data.status === "success") {
                     toast.success("Thêm đánh giá thành công", {
                         position: "top-right",
