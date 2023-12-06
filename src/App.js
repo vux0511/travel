@@ -54,6 +54,7 @@ function App() {
                     path="/sinh-vien-quoc-te"
                     element={<InternationalStudentPage />}
                 />
+                <Route path="*" element={<InternationalStudentPage />} />
             </Routes>
         </div>
     );

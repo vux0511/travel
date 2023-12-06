@@ -27,38 +27,38 @@ function Slider() {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <div class="slide swiper-slide">
+                    <div className="slide swiper-slide">
                         <img
                             src="https://vietnamnomad.com/wp-content/uploads/2019/04/Da-Nang-travel-by-Vietnamnomad.jpg"
                             alt="Slider Image"
-                            class="slider__image"
+                            className="slider__image"
                         />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div class="slide swiper-slide">
+                    <div className="slide swiper-slide">
                         <img
                             src="https://www.originvietnam.com/wp-content/uploads/Danang_Travel_Guide_Header.jpg"
                             alt="Slider Image"
-                            class="slider__image"
+                            className="slider__image"
                         />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div class="slide swiper-slide">
+                    <div className="slide swiper-slide">
                         <img
                             src={Banner2}
                             alt="Slider Image"
-                            class="slider__image"
+                            className="slider__image"
                         />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div class="slide swiper-slide">
+                    <div className="slide swiper-slide">
                         <img
                             src={Banner1}
                             alt="Slider Image"
-                            class="slider__image"
+                            className="slider__image"
                         />
                     </div>
                 </SwiperSlide>

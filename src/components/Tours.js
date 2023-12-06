@@ -49,7 +49,7 @@ function Tours({ title, desc, topTours, newTours }) {
                 }}
             >
                 {topTours.map((tour, index) => (
-                    <SwiperSlide>
+                    <SwiperSlide key={index}>
                         <a href={`/detail-tour/idTour/${tour.idTour}`}>
                             <ToursCard tourCard={tour} />
                         </a>

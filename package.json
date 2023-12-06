@@ -2,7 +2,7 @@
     "name": "travel",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://vu05.id.vn/",
+    "main": "index.js",
     "dependencies": {
         "@ckeditor/ckeditor5-build-classic": "^40.1.0",
         "@ckeditor/ckeditor5-react": "^6.2.0",
