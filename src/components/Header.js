@@ -21,11 +21,13 @@ function Header() {
                                     className="header__logo-left"
                                 />
                             </Link>
-                            <img
-                                src={LogoMain}
-                                alt="LogoMain"
-                                className="header__logo-main"
-                            />
+                            <Link to="/">
+                                <img
+                                    src={LogoMain}
+                                    alt="LogoMain"
+                                    className="header__logo-main"
+                                />
+                            </Link>
                             <div className="header__contact">
                                 <div className="header__contact-phone">
                                     <FiPhoneCall /> 0914134626
@@ -126,14 +128,14 @@ function Header() {
                             </li>
                             <li>
                                 <a href="#" className="desktop-item">
-                                    TOUR FIELTRIP & TTSV
+                                    TOUR FIELD TRIP & TTSV
                                 </a>
                                 <input type="checkbox" id="showDrop3" />
                                 <label
                                     htmlFor="showDrop3"
                                     className="mobile-item"
                                 >
-                                    TOUR FIELTRIP & TTSV
+                                    TOUR FIELD TRIP & TTSV
                                 </label>
                                 <ul className="drop-menu3">
                                     <li>

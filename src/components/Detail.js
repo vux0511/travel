@@ -1,3 +1,4 @@
+import { FaRegStar } from "react-icons/fa";
 import { FaHandshakeSimple } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
 import React, { useState, useEffect } from "react";
@@ -11,6 +12,8 @@ import URL from "../api/URL";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import parse from "html-react-parser";
+import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
 
 function Detail() {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -18,7 +21,12 @@ function Detail() {
     const $$ = document.querySelectorAll.bind(document);
     const { idTour } = useParams();
     const [detailTour, setDetailTour] = useState([]);
+    const [rating, setRating] = useState([]);
     const params = useParams();
+    const notify = () => toast();
+    const navigate = useNavigate();
+    const [fullName, setFullName] = useState("");
+    const [content, setContent] = useState("");
 
     const tabs = $$(".tab-item");
     const panes = $$(".tab-pane");
@@ -35,15 +43,64 @@ function Detail() {
         };
     });
 
+    const handleChangeFullName = (e) => {
+        setFullName(e.target.value);
+    };
+    const handleChangeContent = (e) => {
+        setContent(e.target.value);
+    };
+
     useEffect(() => {
         axios
             .get(`${URL.URL_getTourDetail}?idTour=${idTour}`)
             .then((response) => {
                 setDetailTour(response.data);
-                console.log(response.data);
-                console.log(detailTour);
             });
     }, []);
+
+    useEffect(() => {
+        axios.get(`${URL.URL_getRating}?idTour=${idTour}`).then((response) => {
+            setRating(response.data);
+        });
+    }, []);
+
+    const handlePostRating = (e) => {
+        e.preventDefault();
+        let data = {
+            idTour: idTour,
+            fullName: fullName,
+            content: content,
+        };
+        console.log(data);
+        axios
+            .post(`${URL.URL_addRating}?idTour=${idTour}`, data)
+            .then((response) => {
+                console.log(response);
+                if (response.data.status === "success") {
+                    toast.success("Thêm đánh giá thành công", {
+                        position: "top-right",
+                        autoClose: 3000,
+                        hideProgressBar: true,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        theme: "colored",
+                    });
+                } else {
+                    toast.error("Thêm đánh giá thất bại", {
+                        position: "top-right",
+                        autoClose: 4000,
+                        hideProgressBar: true,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        theme: "colored",
+                    });
+                }
+            });
+    };
 
     return (
         <>
@@ -67,7 +124,7 @@ function Detail() {
                         className="mySwiper2"
                     >
                         {detailTour.map((detail, index) => (
-                            <>
+                            <div key={index}>
                                 <SwiperSlide>
                                     <img
                                         src={detail.imageTour1}
@@ -92,7 +149,7 @@ function Detail() {
                                         className="thumb__main"
                                     />
                                 </SwiperSlide>
-                            </>
+                            </div>
                         ))}
                     </Swiper>
                     <Swiper
@@ -105,37 +162,37 @@ function Detail() {
                         className="mySwiper"
                     >
                         {detailTour.map((detailImage, index) => (
-                            <>
-                                <SwiperSlide key={index}>
+                            <div key={index}>
+                                <SwiperSlide>
                                     <img
                                         src={detailImage.imageTour1}
                                         className="thumb__small"
                                     />
                                 </SwiperSlide>
-                                <SwiperSlide key={index}>
+                                <SwiperSlide>
                                     <img
                                         src={detailImage.imageTour2}
                                         className="thumb__small"
                                     />
                                 </SwiperSlide>
-                                <SwiperSlide key={index}>
+                                <SwiperSlide>
                                     <img
                                         src={detailImage.imageTour3}
                                         className="thumb__small"
                                     />
                                 </SwiperSlide>
-                                <SwiperSlide key={index}>
+                                <SwiperSlide>
                                     <img
                                         src={detailImage.imageTour4}
                                         className="thumb__small"
                                     />
                                 </SwiperSlide>
-                            </>
+                            </div>
                         ))}
                     </Swiper>
                 </div>
                 {detailTour.map((detailTour, index) => (
-                    <div className="detail__info">
+                    <div className="detail__info" key={index}>
                         <div className="detail__name">
                             {detailTour.nameTour}
                         </div>
@@ -186,22 +243,101 @@ function Detail() {
             <div className="container tab__container">
                 <div className="tabs">
                     <div className="tab-item active">Giới Thiệu</div>
-                    {/* <div className="tab-item">Đánh Giá</div> */}
+                    <div className="tab-item">Đánh Giá</div>
                     <div className="linee" />
                 </div>
                 <div className="tab-content">
                     <div className="tab-pane active">
                         <p className="tab__title">HOẠT ĐỘNG NỔI BẬT</p>
                         {detailTour.map((detailTour, index) => (
-                            <div className="tab__desc">
+                            <div className="tab__desc" key={index}>
                                 <li>{parse(detailTour.descTour)}</li>
                             </div>
                         ))}
                     </div>
-                    {/* <div className="tab-pane">
+                    <div className="tab-pane">
                         <p className="tab__title">ĐÁNH GIÁ</p>
-                        <p>...</p>
-                    </div> */}
+                        <div className="tab__rating">
+                            <div className="tab__rating-list">
+                                {rating.length !== 0 ? (
+                                    rating.map((rating, index) => (
+                                        <div
+                                            className="tab__rating-item"
+                                            key={index}
+                                        >
+                                            <img
+                                                src="https://static.vecteezy.com/system/resources/previews/019/896/008/original/male-user-avatar-icon-in-flat-design-style-person-signs-illustration-png.png"
+                                                alt="avatar"
+                                                className="tab__rating-avatar"
+                                            />
+                                            <div className="tab__rating-info">
+                                                <div className="tab__rating-name">
+                                                    {rating.fullName}
+                                                </div>
+                                                <div className="tab__rating-desc">
+                                                    {rating.content}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))
+                                ) : (
+                                    <div className="tab__rating-empty">
+                                        Không có đánh giá nào!
+                                    </div>
+                                )}
+                            </div>
+                            <div className="tab__rating-post">
+                                <div className="tab__rating-header">
+                                    <div className="tab__rating-title">
+                                        Thêm Đánh Giá
+                                    </div>
+                                    <form
+                                        action="#"
+                                        onSubmit={handlePostRating}
+                                        className="form__rating"
+                                    >
+                                        <label
+                                            htmlFor="name"
+                                            className="form__rating-label"
+                                        >
+                                            Tên Của Bạn
+                                        </label>
+                                        <input
+                                            required
+                                            type="text"
+                                            id="name"
+                                            className="form__rating-input"
+                                            placeholder="Nhập tên của bạn..."
+                                            onChange={handleChangeFullName}
+                                        />
+                                        <label
+                                            htmlFor="comment"
+                                            className="form__rating-label"
+                                        >
+                                            Nhận Xét Của Bạn
+                                        </label>
+                                        <textarea
+                                            required
+                                            className="form__rating-input form__rating-large"
+                                            id="comment"
+                                            name="w3review"
+                                            rows="4"
+                                            cols="50"
+                                            placeholder="Nhập nhận xét của bạn..."
+                                            onChange={handleChangeContent}
+                                        ></textarea>
+                                        <button
+                                            className="button-rating"
+                                            // onClick={}
+                                        >
+                                            Đánh Giá
+                                        </button>
+                                        <ToastContainer />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
