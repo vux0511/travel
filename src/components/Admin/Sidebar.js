@@ -1,10 +1,9 @@
-import Cookies from "universal-cookie";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-import axios from "axios";
 import { SiYourtraveldottv } from "react-icons/si";
 import { RxDashboard } from "react-icons/rx";
 import { IoIosLogOut } from "react-icons/io";
+import { FaRegNewspaper } from "react-icons/fa";
 
 function Sidebar() {
     const navigate = useNavigate();
@@ -38,6 +37,18 @@ function Sidebar() {
                     <a href="/admin/tour/view">
                         <SiYourtraveldottv className="bx bx-grid-alt" />
                         <span className="links_name">Tour</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/news/view">
+                        <FaRegNewspaper className="bx bx-grid-alt" />
+                        <span className="links_name">Tin Tức</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/review/view">
+                        <FaRegNewspaper className="bx bx-grid-alt" />
+                        <span className="links_name">Đánh giá</span>
                     </a>
                 </li>
                 <li onClick={handleLogOutAdmin}>

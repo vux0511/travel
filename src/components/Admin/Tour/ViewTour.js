@@ -40,6 +40,7 @@ function ViewTour() {
                         theme: "colored",
                     });
                 }
+                console.log(item);
                 return item.idTour !== data.idTour;
             });
             setListTour(updatedItemsTours);

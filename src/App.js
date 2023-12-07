@@ -12,11 +12,20 @@ import AboutPage from "./pages/AboutPage";
 import InternationalStudentPage from "./pages/InternationalStudentPage";
 import AdminPage from "./components/Admin/Admin";
 import EditTour from "./components/Admin/Tour/EditTour";
+import EditNews from "./components/Admin/News/EditNews";
+import EditReview from "./components/Admin/Review/EditReview";
 import AddTour from "./components/Admin/Tour/AddTour";
 import ViewTour from "./components/Admin/Tour/ViewTour";
+import ViewReview from "./components/Admin/Review/ViewReview";
+import ViewNews from "./components/Admin/News/ViewNews";
+import AddNews from "./components/Admin/News/AddNews";
 import FlowerPage from "./pages/FlowerPage";
 import LoginAdmin from "./components/Admin/LoginAdmin";
 import ContactPage from "./pages/ContactPage";
+import NewsPage from "./pages/NewsPage";
+import DetailNewsPage from "./pages/DetailNewsPage";
+import EventsPage from "./pages/EventsPage";
+import ReviewPage from "./pages/ReviewPage";
 
 function App() {
     return (
@@ -26,8 +35,16 @@ function App() {
                 <Route path="/admin" element={<AdminPage />} />
                 <Route path="/admin/login" element={<LoginAdmin />} />
                 <Route path="/admin/tour/add" element={<AddTour />} />
+                <Route path="/admin/news/add" element={<AddNews />} />
                 <Route path="/admin/tour/view" element={<ViewTour />} />
+                <Route path="/admin/news/view" element={<ViewNews />} />
+                <Route path="/admin/review/view" element={<ViewReview />} />
                 <Route path="/admin/tour/edit/:idTour" element={<EditTour />} />
+                <Route
+                    path="/admin/review/edit/:idReview"
+                    element={<EditReview />}
+                />
+                <Route path="/admin/news/edit/:idNews" element={<EditNews />} />
                 <Route path="/tour-trong-nuoc" element={<TourInVietNam />} />
                 <Route
                     path="/tour-trong-nuoc/category/:idCategory"
@@ -56,6 +73,37 @@ function App() {
                     element={<InternationalStudentPage />}
                 />
                 <Route path="/lien-he" element={<ContactPage />} />
+                <Route path="/tin-tuc" element={<NewsPage />} />
+                <Route
+                    path="/tin-tuc/chi-tiet-bai-viet/idNews/:idNews"
+                    element={<DetailNewsPage />}
+                />
+                <Route path="/events" element={<EventsPage />} />
+                <Route
+                    path="/dat-ve-may-bay"
+                    element={<InternationalStudentPage />}
+                />
+                <Route
+                    path="/dat-phong-khach-san"
+                    element={<InternationalStudentPage />}
+                />
+                <Route
+                    path="/ve-may-bay"
+                    element={<InternationalStudentPage />}
+                />
+                <Route
+                    path="/ve-tham-quan-du-lich"
+                    element={<InternationalStudentPage />}
+                />
+                <Route
+                    path="/ve-combo"
+                    element={<InternationalStudentPage />}
+                />
+                <Route
+                    path="/viec-lam-nuoc-ngoai"
+                    element={<InternationalStudentPage />}
+                />
+                <Route path="/danh-gia" element={<ReviewPage />} />
                 <Route path="*" element={<InternationalStudentPage />} />
             </Routes>
         </div>

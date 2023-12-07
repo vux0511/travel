@@ -449,6 +449,7 @@ td,
 th {
     border: 1px solid #ddd;
     text-align: left;
+    line-height: 26px;
 }
 
 table {
@@ -616,4 +617,25 @@ td {
     cursor: pointer;
     outline: none;
     border: 1px solid #ddd;
+}
+
+.admin__review {
+    padding: 30px;
+}
+.admin__review-item {
+    background-color: #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    label {
+        padding: 15px 0 15px 15px;
+        line-height: 28px;
+    }
+}
+
+.admin__review-input {
+    padding: 15px 10px;
+    line-height: 28px;
 }

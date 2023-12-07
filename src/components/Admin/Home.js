@@ -50,7 +50,6 @@ function Home() {
                 <nav>
                     <div className="sidebar-button" onClick={handleClickMenu}>
                         <GrMenu className="bx bx-menu sidebarBtn" />
-                        <span className="dashboard">Dashboard</span>
                     </div>
                     <div className="search-box">
                         <input type="text" placeholder="Search..." />

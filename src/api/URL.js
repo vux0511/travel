@@ -1,6 +1,6 @@
-// const URL = "https://vu05.id.vn/Travel_API/api";
+const URL = "https://vu05.id.vn/Travel_API/api";
 
-const URL = "http://localhost/Travel_API/api";
+// const URL = "http://localhost/Travel_API/api";
 
 export default {
     URL_getTourCard: URL + "/getTourCard.php",
@@ -48,4 +48,12 @@ export default {
     URL_getCategoryByID: URL + "/getCategoryByID.php",
     URL_getRating: URL + "/getRating.php",
     URL_addRating: URL + "/addRating.php",
+    URL_getNews: URL + "/getNews.php",
+    URL_getNewsDetail: URL + "/getNewsDetail.php",
+    URL_editNews: URL + "/editNews.php",
+    URL_deleteNews: URL + "/deleteNews.php",
+    URL_addNews: URL + "/addNews.php",
+    URL_addReview: URL + "/addReview.php",
+    URL_getReview: URL + "/getReview.php",
+    URL_getReviewDetail: URL + "/getReviewDetail.php",
 };

@@ -3,263 +3,315 @@ import { Link } from "react-router-dom";
 import VietNamIcon from "../assets/vietnam-icon.png";
 import LogoMain from "../assets/logo-main.jpeg";
 import WorldIcon from "../assets/world-icon.png";
+import ReviewIcon from "../assets/review-icon.png";
+import NewsIcon from "../assets/news-icon.png";
+import TourIcon from "../assets/tour-icon.png";
+import Ticket from "../assets/ticket-icon.png";
 import HomeIcon from "../assets/Home-Icon.png";
 import FieldTripIcon from "../assets/field-trip-icon.png";
 import ServiceIcon from "../assets/public-service.png";
 import ContactIcon from "../assets/contact-us.png";
 import TeambuildingIcon from "../assets/team-building-icon.png";
 import { AiOutlineMenu } from "react-icons/ai";
+import { useEffect, useState } from "react";
 
 function Header() {
-    return (
-        <div className="wrapper">
-            <>
-                <nav>
-                    <div className="wrapper">
-                        <input type="radio" name="slider" id="menu-btn" />
-                        <input type="radio" name="slider" id="close-btn" />
-                        <div>
-                            <Link to="/">
-                                <img
-                                    src={LogoMain}
-                                    alt="LogoLeft"
-                                    className="header__logo-left"
-                                />
-                            </Link>
-                        </div>
-                        <ul className="nav-links">
-                            <label
-                                htmlFor="close-btn"
-                                className="btn close-btn"
-                            >
-                                <MdClear className="fas fa-times header__icon header__icon2" />
-                            </label>
+    const [scrolled, setScrolled] = useState(false);
 
+    const handleMenu = () => {
+        let menuToggle = document.querySelector(".menuToggle");
+        let header = document.querySelector("header");
+        header.classList.toggle("active");
+    };
+
+    const handleScroll = () => {
+        const offset = window.scrollY;
+        if (offset > 200) {
+            setScrolled(true);
+        } else {
+            setScrolled(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+    }, []);
+
+    return (
+        <header
+            className={`main-header wrapper ${
+                scrolled ? "sticky-header wrapper" : ""
+            }`}
+        >
+            {/* <a href="#" className="logo">
+                DINGDING
+            </a>
+
+            <input type="checkbox" name="#" id="menu-bar" />
+            <label htmlFor="menu-bar">Menu</label>
+
+            <nav className="navbar">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Tour +</a>
+                        <ul>
                             <li>
-                                <img
-                                    src={HomeIcon}
-                                    alt=""
-                                    className="header__icon"
-                                />
-                                <a href="#" className="desktop-item">
-                                    VỀ DING DING
-                                </a>
-                                <input type="checkbox" id="showDrop5" />
-                                <label
-                                    htmlFor="showDrop5"
-                                    className="mobile-item"
-                                >
-                                    VỀ DING DING
-                                </label>
-                                <ul className="drop-menu5">
+                                <a href="#">Tour Trong Nước</a>
+                                <ul>
                                     <li>
-                                        <a href="/gioi-thieu">GIỚI THIỆU</a>
+                                        <a href="#">Tour Miền Bắc</a>
                                     </li>
                                     <li>
-                                        <a href="/ho-so-nang-luc">
-                                            HỒ SƠ NĂNG LỰC
-                                        </a>
+                                        <a href="#">Tour Miền Bắc</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tour Miền Bắc</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tour Miền Bắc</a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <img
-                                    src={VietNamIcon}
-                                    alt=""
-                                    className="header__icon"
-                                />
-                                <a
-                                    href="/tour-trong-nuoc/category/1"
-                                    className="desktop-item"
-                                >
-                                    TOUR TRONG NƯỚC
-                                </a>
-                                <input type="checkbox" id="showDrop" />
-                                <label
-                                    htmlFor="showDrop"
-                                    className="mobile-item"
-                                >
-                                    TOUR TRONG NƯỚC
-                                </label>
-                                <ul className="drop-menu">
+                                <a href="#">Tour Nước Ngoài</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Tour Miền Bắc</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tour Miền Bắc</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tour Miền Bắc</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tour Miền Bắc</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Pages +</a>
+                        <ul>
+                            <li>
+                                <a href="#">Page 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Page 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Review</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav> */}
+
+            <a href="/" className="logo">
+                <img src={LogoMain} alt="Logo" className="logo" />
+            </a>
+            <div className="menuToggle" onClick={handleMenu}></div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img
+                                src={HomeIcon}
+                                alt=""
+                                className="header__icon"
+                            />
+                            VỀ DING DING
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="/gioi-thieu">GIỚI THIỆU</a>
+                            </li>
+                            <li>
+                                <a href="/ho-so-nang-luc">HỒ SƠ NĂNG LỰC</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img
+                                src={TourIcon}
+                                alt=""
+                                className="header__icon"
+                            />
+                            TOUR
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="#">TOUR TRONG NƯỚC</a>
+                                <ul>
                                     <li>
                                         <a href="/tour-trong-nuoc/category/1">
-                                            Tour Miền Bắc
+                                            TOUR MIỀN BẮC
                                         </a>
                                     </li>
                                     <li>
                                         <a href="/tour-trong-nuoc/category/2">
-                                            Tour Miền Nam
+                                            TOUR MIỀN NAM
                                         </a>
                                     </li>
                                     <li>
                                         <a href="/tour-trong-nuoc/category/3">
-                                            Tour Tây Nguyên & Biển Đảo
+                                            TOUR TÂY NGUYÊN & BIỂN ĐẢO
                                         </a>
                                     </li>
                                     <li>
                                         <a href="/tour-trong-nuoc/category/4">
-                                            Tour Di Sản Miền Trung
+                                            TOUR DI SẢN MIỀN TRUNG
                                         </a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <img
-                                    src={WorldIcon}
-                                    alt=""
-                                    className="header__icon"
-                                />
-                                <a
-                                    href="/tour-trong-nuoc/category/5"
-                                    className="desktop-item"
-                                >
+                                <a href="/tour-trong-nuoc/category/5">
+                                    {" "}
                                     TOUR NƯỚC NGOÀI
                                 </a>
-                                <input type="checkbox" id="showDrop2" />
-                                <label
-                                    htmlFor="showDrop2"
-                                    className="mobile-item"
-                                >
-                                    TOUR NƯỚC NGOÀI
-                                </label>
-                                <ul className="drop-menu2">
+                                <ul>
                                     <li>
                                         <a href="/tour-trong-nuoc/category/5">
-                                            Tour Châu Á
+                                            TOUR CHÂU Á
                                         </a>
                                     </li>
                                     <li>
                                         <a href="/tour-trong-nuoc/category/6">
-                                            Tour Châu Âu
+                                            TOUR CHÂU ÂU
                                         </a>
                                     </li>
                                     <li>
                                         <a href="/tour-trong-nuoc/category/7">
-                                            Tour Châu Úc
+                                            TOUR CHÂU ÚC
                                         </a>
                                     </li>
                                     <li>
                                         <a href="/tour-trong-nuoc/category/8">
-                                            Tour Châu Mỹ
+                                            TOUR CHÂU MỸ
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/tour-trong-nuoc/category/9">
+                                            TOUR FIELD TRIP
                                         </a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <img
-                                    src={FieldTripIcon}
-                                    alt=""
-                                    className="header__icon"
-                                />
-                                <a href="#" className="desktop-item">
-                                    FIELD TRIP
-                                </a>
-                                <input type="checkbox" id="showDrop3" />
-                                <label
-                                    htmlFor="showDrop3"
-                                    className="mobile-item"
-                                >
-                                    FIELD TRIP
-                                </label>
-                                <ul className="drop-menu3">
-                                    <li>
-                                        <a href="/trai-nghiem-sinh-vien">
-                                            KIẾN TẬP TRẢI NGHIỆM SINH VIÊN
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/sinh-vien-quoc-te">
-                                            SINH VIÊN QUỐC TẾ
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <img
-                                    src={TeambuildingIcon}
-                                    alt=""
-                                    className="header__icon"
-                                />
                                 <a href="/teambuilding-event">TEAMBUILDING</a>
                             </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src={Ticket} alt="" className="header__icon" />
+                            TICKET
+                        </a>
+                        <ul>
                             <li>
-                                <img
-                                    src={ServiceIcon}
-                                    alt=""
-                                    className="header__icon"
-                                />
-                                <a href="#" className="desktop-item">
-                                    DỊCH VỤ
-                                </a>
-                                <input type="checkbox" id="showDrop4" />
-                                <label
-                                    htmlFor="showDrop4"
-                                    className="mobile-item"
-                                >
-                                    DỊCH VỤ
-                                </label>
-                                <ul className="drop-menu4">
-                                    <li>
-                                        <a href="/">TỔ CHỨC SỰ KIỆN</a>
-                                    </li>
-                                    <li>
-                                        <a href="/hoa-tuoi">HOA TƯƠI</a>
-                                    </li>
-                                    <li>
-                                        <a href="/dich-vu-visa">LÀM VISA</a>
-                                    </li>
-                                    <li>
-                                        <a href="/dat-phong-khach-san">
-                                            ĐẶT PHÒNG KHÁCH SẠN
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/dat-ve-may-bay">
-                                            ĐẶT VÉ MÁY BAY
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/thue-xe">THUÊ XE</a>
-                                    </li>
-                                </ul>
+                                <a href="/ve-may-bay">VÉ BÁY MAY</a>
                             </li>
                             <li>
-                                <img
-                                    src={ContactIcon}
-                                    alt=""
-                                    className="header__icon"
-                                />
-                                <a href="/lien-he" className="desktop-item">
-                                    LIÊN HỆ
-                                </a>
-                                <input type="checkbox" id="showDrop4" />
-                                <label
-                                    htmlFor="showDrop4"
-                                    className="mobile-item"
-                                >
-                                    LIÊN HỆ
-                                </label>
-                                <ul className="drop-menu4">
-                                    {/* <li>
-                                        <a href="/thue-xe">THUÊ XE</a>
+                                <a href="#">VÉ DỊCH VỤ</a>
+                                <ul>
+                                    <li>
+                                        <a href="/ve-tham-quan-du-lich">
+                                            VÉ THAM QUAN DU LỊCH
+                                        </a>
                                     </li>
                                     <li>
-                                        <a href="/hoa-tuoi">HOA TƯƠI</a>
+                                        <a href="/ve-combo">COMBO</a>
                                     </li>
-                                    <li>
-                                        <a href="/dich-vu-visa">DỊCH VỤ VISA</a>
-                                    </li> */}
                                 </ul>
                             </li>
                         </ul>
-                        <label htmlFor="menu-btn" className="btn menu-btn">
-                            <AiOutlineMenu className="fas fa-bars header__icon" />
-                        </label>
-                    </div>
-                </nav>
-            </>
-        </div>
+                    </li>
+                    <li>
+                        <a href="/trai-nghiem-sinh-vien">
+                            <img
+                                src={FieldTripIcon}
+                                alt=""
+                                className="header__icon"
+                            />
+                            FIELD TRIP
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img
+                                src={ServiceIcon}
+                                alt=""
+                                className="header__icon"
+                            />
+                            DỊCH VỤ
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="/events">TỔ CHỨC SỰ KIỆN</a>
+                            </li>
+                            <li>
+                                <a href="/hoa-tuoi">HOA TƯƠI</a>
+                            </li>
+                            <li>
+                                <a href="/dich-vu-visa">LÀM VISA</a>
+                            </li>
+                            <li>
+                                <a href="/dat-phong-khach-san">
+                                    ĐẶT PHÒNG KHÁCH SẠN
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/viec-lam-nuoc-ngoai">
+                                    VIỆC LÀM NƯỚC NGOÀI
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/thue-xe">THUÊ XE</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/tin-tuc">
+                            <img
+                                src={NewsIcon}
+                                alt=""
+                                className="header__icon"
+                            />
+                            TIN TỨC
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/danh-gia">
+                            <img
+                                src={ReviewIcon}
+                                alt=""
+                                className="header__icon"
+                            />
+                            REVIEW
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/lien-he">
+                            <img
+                                src={ContactIcon}
+                                alt=""
+                                className="header__icon"
+                            />
+                            LIÊN HỆ
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     );
 }
 

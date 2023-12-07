@@ -1,6 +1,5 @@
 import Sidebar from "../Sidebar";
 import React, { useState, useRef, useMemo, useEffect } from "react";
-
 import { GrMenu } from "react-icons/gr";
 import { IoSearch } from "react-icons/io5";
 import axios from "axios";
@@ -94,7 +93,7 @@ function AddTour() {
 
         axios.post(URL.URL_addNewTour, data).then((response) => {
             if (response.data.status === "success") {
-                toast.success("Thêm sản phẩm thành công", {
+                toast.success("Thêm thành công", {
                     position: "top-right",
                     autoClose: 4000,
                     hideProgressBar: true,
@@ -105,7 +104,7 @@ function AddTour() {
                     theme: "colored",
                 });
             } else {
-                toast.error("Thêm sản phẩm thất bại", {
+                toast.error("Thêm thất bại", {
                     position: "top-right",
                     autoClose: 4000,
                     hideProgressBar: true,
