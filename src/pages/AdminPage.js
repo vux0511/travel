@@ -1,20 +1,13 @@
-import Header from "./Header";
 import Sidebar from "./Sidebar";
 import Home from "./Home";
-import LoginAdmin from "./LoginAdmin";
-
+import { useEffect } from "react";
 import "boxicons";
 import "../../scss/Admin.scss";
 
 function App() {
-    // const cookies = new Cookies();
-    // const [idAdmin, setIdAdmin] = useState("");
-
-    // useEffect(() => {
-    //     if (cookies.get("idAdmin")) {
-    //         setIdAdmin(cookies.get("idAdmin").idAdmin);
-    //     }
-    // });
+    useEffect(() => {
+        document.title = "ADMIN";
+    }, []);
 
     return (
         <>

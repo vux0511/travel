@@ -28,7 +28,12 @@ function TourCard({ tourCard, newTours }) {
                 </div>
                 <div className="card__bottom">
                     <div className="card__price">
-                        Giá: <p>{tourCard.priceTour}</p>
+                        Giá:{" "}
+                        <p>
+                            {tourCard.priceTour
+                                .toString()
+                                .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                        </p>
                     </div>
                     <div className="card__more">
                         Chi Tiết <FaArrowRightLong className="card__icon" />

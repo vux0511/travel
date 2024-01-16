@@ -11,8 +11,6 @@ import HomeIcon from "../assets/Home-Icon.png";
 import FieldTripIcon from "../assets/field-trip-icon.png";
 import ServiceIcon from "../assets/public-service.png";
 import ContactIcon from "../assets/contact-us.png";
-import TeambuildingIcon from "../assets/team-building-icon.png";
-import { AiOutlineMenu } from "react-icons/ai";
 import { useEffect, useState } from "react";
 
 function Header() {
@@ -43,77 +41,6 @@ function Header() {
                 scrolled ? "sticky-header wrapper" : ""
             }`}
         >
-            {/* <a href="#" className="logo">
-                DINGDING
-            </a>
-
-            <input type="checkbox" name="#" id="menu-bar" />
-            <label htmlFor="menu-bar">Menu</label>
-
-            <nav className="navbar">
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Tour +</a>
-                        <ul>
-                            <li>
-                                <a href="#">Tour Trong Nước</a>
-                                <ul>
-                                    <li>
-                                        <a href="#">Tour Miền Bắc</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Tour Miền Bắc</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Tour Miền Bắc</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Tour Miền Bắc</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Tour Nước Ngoài</a>
-                                <ul>
-                                    <li>
-                                        <a href="#">Tour Miền Bắc</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Tour Miền Bắc</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Tour Miền Bắc</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Tour Miền Bắc</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Pages +</a>
-                        <ul>
-                            <li>
-                                <a href="#">Page 1</a>
-                            </li>
-                            <li>
-                                <a href="#">Page 2</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Review</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </nav> */}
-
             <a href="/" className="logo">
                 <img src={LogoMain} alt="Logo" className="logo" />
             </a>

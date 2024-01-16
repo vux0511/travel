@@ -26,7 +26,6 @@ function ViewTour() {
         var data = {
             idNews: e.target.value,
         };
-        console.log(data);
         axios.post(URL.URL_deleteNews, data).then((response) => {
             const updatedItemsNews = listNews.filter((item) => {
                 if (item.idNews === data.idNews) {
@@ -65,7 +64,6 @@ function ViewTour() {
                 <nav>
                     <div className="sidebar-button" onClick={handleClickMenu}>
                         <GrMenu className="bx bx-menu sidebarBtn" />
-                        <span className="dashboard">Add Tin Tức</span>
                     </div>
                     <div className="search-box">
                         <input type="text" placeholder="Search..." />
@@ -83,7 +81,7 @@ function ViewTour() {
                     <div className="overview-boxes">
                         <a href="/admin/news/add">
                             <button className="button button__admin">
-                                Thêm News
+                                Thêm Tin Tức
                             </button>
                         </a>
                         <table>

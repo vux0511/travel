@@ -40,7 +40,6 @@ function ViewTour() {
                         theme: "colored",
                     });
                 }
-                console.log(item);
                 return item.idTour !== data.idTour;
             });
             setListTour(updatedItemsTours);
@@ -65,7 +64,6 @@ function ViewTour() {
                 <nav>
                     <div className="sidebar-button" onClick={handleClickMenu}>
                         <GrMenu className="bx bx-menu sidebarBtn" />
-                        <span className="dashboard">Add Tour</span>
                     </div>
                     <div className="search-box">
                         <input type="text" placeholder="Search..." />
@@ -114,7 +112,15 @@ function ViewTour() {
                                                 className="table__image-size"
                                             />
                                         </td>
-                                        <td>{tours.priceTour}</td>
+                                        <td>
+                                            {tours.priceTour
+                                                .toString()
+                                                .replace(
+                                                    /\B(?=(\d{3})+(?!\d))/g,
+                                                    ","
+                                                )}
+                                            đ
+                                        </td>
                                         <td>{tours.dayTour}</td>
                                         <td>{tours.vehicleTour}</td>
                                         {/* <td className="table__desc-text">

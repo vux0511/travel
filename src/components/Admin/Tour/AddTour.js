@@ -125,7 +125,6 @@ function AddTour() {
                 <nav>
                     <div className="sidebar-button" onClick={handleClickMenu}>
                         <GrMenu className="bx bx-menu sidebarBtn" />
-                        <span className="dashboard">Add Tour</span>
                     </div>
                     <div className="search-box">
                         <input type="text" placeholder="Search..." />
@@ -140,13 +139,7 @@ function AddTour() {
                     </div>
                 </nav>
                 <div className="home-content">
-                    <div className="overview-boxes">
-                        <a href="/admin/tour/add">
-                            <button className="button button__admin">
-                                Thêm Tour
-                            </button>
-                        </a>
-                    </div>
+                    <div className="overview-boxes"></div>
                     <div className="editTour">
                         <div className="editTour__row">
                             <label htmlFor="name">Tên Tour: </label>

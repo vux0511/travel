@@ -26,7 +26,6 @@ function ViewReview() {
         var data = {
             idNews: e.target.value,
         };
-        console.log(data);
         axios.post(URL.URL_deleteNews, data).then((response) => {
             const updatedItemsNews = listReview.filter((item) => {
                 if (item.idNews === data.idNews) {
@@ -65,7 +64,6 @@ function ViewReview() {
                 <nav>
                     <div className="sidebar-button" onClick={handleClickMenu}>
                         <GrMenu className="bx bx-menu sidebarBtn" />
-                        <span className="dashboard"> Tin Tức</span>
                     </div>
                     <div className="search-box">
                         <input type="text" placeholder="Search..." />

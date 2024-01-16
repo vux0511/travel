@@ -201,7 +201,14 @@ function Detail() {
                             Phương tiện: <span> {detailTour.vehicleTour}</span>
                         </div>
                         <div className="detail__price">
-                            Giá: <span> {detailTour.priceTour}</span>
+                            Giá:{" "}
+                            <span>
+                                {" "}
+                                {detailTour.priceTour
+                                    .toString()
+                                    .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                                đ
+                            </span>
                         </div>
                         <a
                             href="https://www.facebook.com/messages/t/1848020962149796"

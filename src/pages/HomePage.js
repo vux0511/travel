@@ -37,6 +37,10 @@ function Home() {
         });
     }, []);
 
+    useEffect(() => {
+        document.title = "TRANG CHỦ - DINGDING";
+    }, []);
+
     return (
         <>
             <Header />

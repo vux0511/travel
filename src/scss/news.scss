@@ -6,9 +6,10 @@
         gap: 25px;
         flex-wrap: wrap;
         margin-bottom: 50px;
+        margin-left: 25px;
     }
     &__item {
-        width: calc(100% / 3 - 30px);
+        width: calc(100% / 3 - 25px);
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -33,10 +34,10 @@
         font-weight: 700;
         line-height: 2;
         font-size: 17px;
-        padding-bottom: 10px;
+        margin-bottom: 10px;
         color: $black-color;
         display: -webkit-box;
-        -webkit-line-clamp: 2;
+        -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -69,6 +70,10 @@
 .detailnews__desc {
     line-height: 33px;
     padding-top: 30px;
+    img {
+        max-width: 100%;
+        object-fit: cover;
+    }
 }
 .detailnews__bottom {
     margin-top: 50px;

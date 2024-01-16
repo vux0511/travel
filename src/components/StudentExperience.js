@@ -40,27 +40,20 @@ function StudentExperiencePage() {
                     </div>
                     <div className="teambuilding__desc">
                         <p>
-                            Xu hướng học tập mới hiện nay không chỉ dừng lại ở
-                            việc tiếp thu kiến thức trên giảng đường, mà còn là
-                            những buổi học ngoại khóa, những buổi tham quan
-                            doanh nghiệp, dã ngoại để các em sinh viên không chỉ
-                            được tham quan du lịch truyền thống mà còn có thể
-                            tiếp xúc với môi trường nghề nghiệp tương lai: các
-                            công ty, trường đại học, viện nghiên cứu, cũng như
-                            gặp gỡ, trò chuyện về kinh nghiệm với các chuyên
-                            gia, cựu sinh viên đã thành công trong nghề nghiệp,
-                            từ đó vận dụng những kiến thức đã học vào thực tế
-                            củng cố lòng yêu nghành, yêu nghề học hỏi thêm nhiều
-                            kỹ năng mềm bổ ích, đúc kết kinh nghiệm cần thiết
-                            trước khi ra trường và tìm kiếm việc làm.
-                        </p>
-                        <p>
-                            Tour học sinh sinh viên là hoạt động ngoại khóa hấp
-                            dẫn và bổ ích dành cho các bạn trẻ trước khi ra
-                            trường. Đây là cơ hội để học sinh sinh viên khám
-                            phá, tìm hiểu và trải nghiệm văn hóa, lịch sử, con
-                            người của một địa phương nào đó, đồng thời rèn luyện
-                            kỹ năng giao tiếp, kết nối và phát triển bản thân
+                            FIELD TRIP là xu hướng học tập mới hiện nay được
+                            DingDing travel phối hợp với các trường Đại học tổ
+                            chức một cách chuyên nghiệp. Những buổi học ngoại
+                            khóa, những buổi tham quan doanh nghiệp, dã ngoại
+                            kết hợp kiến tập trải nghiệm tới những quốc gia tiên
+                            tiến, có nền giáo dục phát triển góp phần tạo điều
+                            kiện tới các em sinh viên không chỉ là tham quan du
+                            lịch truyền thống mà còn có cơ hội tiếp xúc với môi
+                            trường làm việc chuyên nghiệp, nghề nghiệp tương lai
+                            sau khi tốt nghiệp. Bên cạnh đó, còn là cơ hội để
+                            sinh viên khám phá, tìm hiểu và trải nghiệm văn hóa,
+                            lịch sử, con người của một địa phương hay quốc gia
+                            mới, rèn luyện kỹ năng giao tiếp, kết nối và phát
+                            triển bản thân.
                         </p>
                         <p>
                             Kết hợp hoạt động team building nhẹ nhàng cũng giúp
@@ -147,13 +140,10 @@ function StudentExperiencePage() {
                                 1. Thảo luận nhu cầu, mong muốn của trường học
                             </div>
                             <div className="chooseus__desc teambuilding__steps-desc">
-                                Trước khi bắt đầu tổ chức tour học sinh sinh
-                                viên, DingDing sẽ tiến hành thảo luận với đại
-                                diện của trường học để hiểu rõ nhu cầu, mong
-                                muốn của học sinh và giáo viên : số lượng, thời
-                                gian kỳ nghỉ, địa điểm mong muốn, và các hoạt
-                                động trải nghiệm khám phá hoặc chương trình học
-                                tập thực tế mong muốn.
+                                Trước khi bắt đầu tổ chức tour Field Trip,
+                                DingDing sẽ tiến hành thảo luận với đại diện của
+                                các Khoa để hiểu rõ nhu cầu, mong muốn của sinh
+                                viên và giảng viên.
                             </div>
                         </div>
                         <div className="chooseus__item teambuilding__steps-item">
@@ -163,11 +153,9 @@ function StudentExperiencePage() {
                             </div>
                             <div className="chooseus__desc teambuilding__steps-desc">
                                 Sau khi hiểu rõ nhu cầu, mong muốn, ngân sách
-                                của trường học, DingDing sẽ tư vấn địa điểm du
-                                lịch phù hợp nhất với tour học sinh sinh viên
-                                của quý trường. Đội ngũ thiết kế của chúng tôi
-                                sẽ lên ý tưởng, concept, banner, hashtag và clip
-                                kỷ niệm mang màu sắc riêng.
+                                của từng Lớp, DingDing sẽ tư vấn địa điểm cũng
+                                như những dịch vu phù hợp nhất với tour kiến
+                                tập.
                             </div>
                         </div>
                         <div className="chooseus__item teambuilding__steps-item">
@@ -177,12 +165,9 @@ function StudentExperiencePage() {
                                 tour học sinh sinh viên
                             </div>
                             <div className="chooseus__desc teambuilding__steps-desc">
-                                DingDing sẽ đề nghị các hoạt động tham quan và
-                                trải nghiệm phù hợp với nhu cầu, mong muốn của
-                                trường học. Đồng thời, DingDing cũng đưa ra các
-                                gợi ý và kế hoạch chi tiết để giúp trường học có
-                                thể quản lý và tổ chức các hoạt động này một
-                                cách dễ dàng.
+                                DingDing cũng đưa ra các gợi ý và kế hoạch chi
+                                tiết để giúp trường học có thể quản lý và tổ
+                                chức các hoạt động này một cách dễ dàng
                             </div>
                         </div>
                         <div className="chooseus__item teambuilding__steps-item">
@@ -193,11 +178,9 @@ function StudentExperiencePage() {
                             <div className="chooseus__desc teambuilding__steps-desc">
                                 DingDing & Events chuẩn bị, cung cấp các thiết
                                 bị và phương tiện cần thiết : dụng cụ chơi các
-                                trò chơi, thiết bị thể thao, các phương tiện di
+                                trò chơi, thiết bị thể thao, phương tiện di
                                 chuyển, âm thanh, ánh sáng và đội ngũ hướng dẫn
-                                viên chuyên nghiệp, tận tâm để đảm bảo tour được
-                                diễn ra suôn sẻ và học sinh sinh viên có được
-                                những trải nghiệm tốt nhất.
+                                viên chuyên nghiệp, tận tâm
                             </div>
                         </div>
                         <div className="chooseus__item teambuilding__steps-item">
@@ -206,13 +189,12 @@ function StudentExperiencePage() {
                                 5. Đảm bảo an toàn và bảo hiểm
                             </div>
                             <div className="chooseus__desc teambuilding__steps-desc">
-                                DingDing đảm bảo tất cả các hoạt động và phương
-                                tiện vận chuyển được kiểm tra, bảo trì thường
-                                xuyên và tuân thủ đầy đủ các quy định an toàn.
-                                Đồng thời, DingDing cũng sẽ cung cấp các giải
-                                pháp bảo hiểm phù hợp để đảm bảo học sinh và
-                                giáo viên luôn được bảo vệ trong trường hợp có
-                                sự cố xảy ra.
+                                DingDing đảm bảo tất cả phương tiện di chuyển
+                                được kiểm tra, bảo trì thường xuyên và tuân thủ
+                                đầy đủ các quy định an toàn. Đồng thời, DingDing
+                                cũng sẽ cung cấp các giải pháp bảo hiểm phù hợp
+                                để quý khách hàng được bảo vệ trong trường hợp
+                                có sự cố xảy ra.
                             </div>
                         </div>
                         <div className="chooseus__item teambuilding__steps-item">
@@ -221,12 +203,11 @@ function StudentExperiencePage() {
                                 6. Đánh giá và phản hồi
                             </div>
                             <div className="chooseus__desc teambuilding__steps-desc">
-                                Sau mỗi tour học sinh sinh viên kết thúc, Image
+                                Sau mỗi tour Field Trip kết thúc, DingDing
                                 Travel sẽ thực hiện đánh giá và thu thập phản
-                                hồi từ trường học để hiểu rõ những điểm tốt và
-                                điểm cần cải thiện trong tour. Thông tin này sẽ
-                                giúp cho DingDing hoàn thiện thêm các dịch vụ và
-                                giải pháp của mình.
+                                hồi từ quý thầy cô và các bạn sinh viên để hiểu
+                                rõ những điểm tốt và điểm cần cải thiện trong
+                                tour.
                             </div>
                         </div>
                     </div>

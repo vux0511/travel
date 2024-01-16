@@ -51,7 +51,6 @@ function AddNews() {
             contentNews: dataForm,
             imageNews: imageNews,
         };
-        console.log(data);
 
         axios.post(URL.URL_addNews, data).then((response) => {
             if (response.data.status === "success") {
@@ -127,7 +126,7 @@ function AddNews() {
                     </div>
                     <div className="editTour__editer">
                         <p className="desc__tour">Mô tả Tour:</p>
-                        {/* <CKEditor
+                        <CKEditor
                             editor={ClassicEditor}
                             data="Nhập mô tả tour..."
                             onReady={(editor) => {
@@ -140,14 +139,14 @@ function AddNews() {
                             onBlur={(event, editor) => {}}
                             onFocus={(event, editor) => {}}
                         />
-                         */}
-                        <JoditEditor
+
+                        {/* <JoditEditor
                             ref={editor}
                             value={content}
                             tabIndex={1}
                             onBlur={(dataForm) => setDataForm(dataForm)}
                             onChange={(dataForm) => {}}
-                        />
+                        /> */}
                         <button
                             className="button button-primary button-edit"
                             onClick={handleAdd}

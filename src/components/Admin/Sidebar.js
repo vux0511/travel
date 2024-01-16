@@ -4,6 +4,7 @@ import { SiYourtraveldottv } from "react-icons/si";
 import { RxDashboard } from "react-icons/rx";
 import { IoIosLogOut } from "react-icons/io";
 import { FaRegNewspaper } from "react-icons/fa";
+import { IoTicketOutline } from "react-icons/io5";
 
 function Sidebar() {
     const navigate = useNavigate();
@@ -30,13 +31,19 @@ function Sidebar() {
                 <li>
                     <a href="/admin" className="active">
                         <RxDashboard className="bx bx-grid-alt" />
-                        <span className="links_name">HOME</span>
+                        <span className="links_name">Home</span>
                     </a>
                 </li>
                 <li>
                     <a href="/admin/tour/view">
                         <SiYourtraveldottv className="bx bx-grid-alt" />
                         <span className="links_name">Tour</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/travelticket/view">
+                        <IoTicketOutline className="bx bx-grid-alt" />
+                        <span className="links_name">Vé Du Lịch</span>
                     </a>
                 </li>
                 <li>

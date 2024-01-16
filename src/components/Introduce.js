@@ -50,9 +50,9 @@ function Introduce() {
                         </p>
                     </div>
                 </div>
-                <button className="button button-primary">
+                {/* <button className="button button-primary">
                     Xem Thêm <FaArrowRightLong />
-                </button>
+                </button> */}
             </div>
         </section>
     );

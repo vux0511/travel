@@ -43,7 +43,7 @@ function News() {
                                     {news.titleNews}
                                 </div>
                                 <div className="news__desc">
-                                    {parse(news.contentNews)}
+                                    {parse(news.contentNews.slice(0, 140))}
                                 </div>
                             </div>
                         </a>

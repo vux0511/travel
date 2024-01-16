@@ -56,9 +56,11 @@ function Tours({ title, desc, topTours, newTours }) {
                     </SwiperSlide>
                 ))}
             </Swiper>
-            <button className="button button-primary">
-                Xem Thêm <FaArrowRightLong />
-            </button>
+            <a href="/tour-trong-nuoc/category/1">
+                <button className="button button-primary">
+                    Xem Thêm <FaArrowRightLong />
+                </button>
+            </a>
         </div>
     );
 }

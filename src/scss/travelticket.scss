@@ -1,0 +1,118 @@
+.travelticket {
+    &__wapper {
+        margin-top: 70px;
+    }
+    &__desc-item {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+        line-height: 26px;
+        display: -webkit-box;
+        color: $black-color;
+        font-weight: 300;
+    }
+    &__price {
+        font-weight: 600;
+        padding-bottom: 12px;
+        font-size: 18px;
+        color: $green-primary;
+    }
+    &__detail {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        &-content {
+            width: 75%;
+            img {
+                max-width: 100%;
+            }
+        }
+        &-feature {
+            width: 25%;
+            margin-top: 30px;
+            background-color: #f6f3f3;
+            padding: 25px 15px;
+            border-radius: 4px;
+            height: max-content;
+        }
+        &-image {
+            width: 100%;
+        }
+        &-title {
+            font-size: 22px;
+            font-weight: 500;
+            color: #019878;
+            padding: 20px 0 10px;
+        }
+        &-price {
+            line-height: 28px;
+            padding-bottom: 20px;
+            font-size: 22px;
+            color: #019878;
+            font-weight: 600;
+        }
+        &-button {
+            background-color: $green-color;
+            padding: 13px 20px;
+            border-radius: 4px;
+            font-weight: 500;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 18px;
+            transition: 0.3s;
+            margin-bottom: 30px;
+            border: 1.5px solid $green-color;
+
+            &:hover {
+                background-color: #fff;
+                color: $green-color;
+            }
+        }
+        &-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            p {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+        }
+        &-icon {
+            flex-shrink: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1023.98px) {
+    .travelticket__detail {
+        flex-direction: column;
+        &-content,
+        &-feature {
+            width: 100%;
+        }
+    }
+    .detailnews {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .detailnews {
+        padding: 0 20px;
+    }
+    .detailnews__title {
+        font-size: 25px;
+    }
+    .news__wrapper {
+        margin-left: 0px;
+    }
+}

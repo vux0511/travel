@@ -23,7 +23,7 @@ function DetailNews() {
     return (
         <div className="container detailnews">
             {detailNews.map((detailNews, index) => (
-                <div className="detailnews__info">
+                <div className="detailnews__info" key={index}>
                     <div className="detailnews__title">
                         {detailNews.titleNews}
                     </div>

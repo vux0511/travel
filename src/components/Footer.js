@@ -2,6 +2,7 @@ import Logo from "../assets/logo-main.jpeg";
 import { FaMapLocation } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { FaPhone } from "react-icons/fa6";
 
 function Footer() {
     return (
@@ -21,11 +22,11 @@ function Footer() {
                             Tôn, Phường Bến Nghé, Quận 1 Thành phố Hồ Chí Minh
                         </div>
                         <div className="footer__phone">
-                            <FaPhoneAlt className="footer__icon" /> 0914134626
+                            <FaPhoneAlt className="footer__icon" /> 0964655286
                         </div>
                         <div className="footer__email">
                             <MdEmail className="footer__icon" />{" "}
-                            sales@dingding.vn
+                            dingding.info2018@gmail.com
                         </div>
                     </div>
                 </div>
@@ -34,25 +35,58 @@ function Footer() {
                         <li className="footer__item-link footer__title">
                             Tour Trong Nước
                         </li>
-                        <li className="footer__item-link">Tour Miền Bắc</li>
                         <li className="footer__item-link">
-                            Tour Di Sản Miền Trung
+                            <a href="/tour-trong-nuoc/category/1">
+                                Tour Miền Bắc
+                            </a>
                         </li>
-                        <li className="footer__item-link">Tour Miền Nam</li>
                         <li className="footer__item-link">
-                            Tour Tây Nguyên & Biển Đảo
+                            <a href="/tour-trong-nuoc/category/2">
+                                Tour Di Sản Miền Trung
+                            </a>
+                        </li>
+                        <li className="footer__item-link">
+                            <a href="/tour-trong-nuoc/category/3">
+                                Tour Miền Nam
+                            </a>
+                        </li>
+                        <li className="footer__item-link">
+                            <a href="/tour-trong-nuoc/category/4">
+                                Tour Tây Nguyên & Biển Đảo
+                            </a>
+                        </li>
+                        <li className="footer__item-link">
+                            <a href="/tour-trong-nuoc/category/9">
+                                Tour Field Trip
+                            </a>
                         </li>
                     </ul>
                 </div>
                 <div className="footer__item">
                     <ul className="footer__item-menu">
                         <li className="footer__item-link footer__title">
-                            Tour Châu Á
+                            Tour Nước Ngoài
                         </li>
-                        <li className="footer__item-link">Tour Châu Á</li>
-                        <li className="footer__item-link">Tour Châu Âu</li>
-                        <li className="footer__item-link">Tour Châu Úc</li>
-                        <li className="footer__item-link">Tour Châu Mỹ</li>
+                        <li className="footer__item-link ">
+                            <a href="/tour-trong-nuoc/category/5">
+                                Tour Châu Á
+                            </a>
+                        </li>
+                        <li className="footer__item-link">
+                            <a href="/tour-trong-nuoc/category/6">
+                                Tour Châu Âu
+                            </a>
+                        </li>
+                        <li className="footer__item-link">
+                            <a href="/tour-trong-nuoc/category/7">
+                                Tour Châu Úc
+                            </a>
+                        </li>
+                        <li className="footer__item-link">
+                            <a href="/tour-trong-nuoc/category/1">
+                                Tour Châu Mỹ
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div className="footer__item">
@@ -61,18 +95,25 @@ function Footer() {
                             Về Chúng Tôi
                         </li>
                         <li className="footer__item-link">
-                            Vì Sao Lại Chọn DingDing
+                            <a href="/gioi-thieu">Vì Sao Lại Chọn Ding Ding </a>
                         </li>
-                        <li className="footer__item-link">Hồ Sơ Nhân Sự</li>
-                        <li className="footer__item-link">Hỏi Đáp Nhanh</li>
-                        <li className="footer__item-link">Liên Hệ</li>
-                        <li className="footer__item-link">Tin Tức</li>
                         <li className="footer__item-link">
-                            Đối Tác Của Chúng Tôi
+                            <a href="/ho-so-nang-luc">Hồ Sơ Năng Lực</a>
+                        </li>
+                        <li className="footer__item-link">
+                            <a href="/lien-he">Liên Hệ</a>
+                        </li>
+                        <li className="footer__item-link">
+                            <a href="/tin-tuc"> Tin Tức</a>
                         </li>
                     </ul>
                 </div>
             </div>
+            <a href="tel: 0964655286" rel="nofollow" className="btn-call">
+                <div className="btn-call__ico">
+                    <FaPhone className="fas fa-phone-alt" />
+                </div>
+            </a>
         </section>
     );
 }

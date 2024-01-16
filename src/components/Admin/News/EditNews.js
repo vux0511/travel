@@ -58,7 +58,6 @@ function EditNews() {
         e.preventDefault();
         const fullData = itemNews;
         fullData.contentNews = dataForm;
-        console.log(fullData);
 
         axios.post(URL.URL_editNews, fullData).then((response) => {
             if (response.data.status === "success") {
@@ -73,7 +72,7 @@ function EditNews() {
                     theme: "colored",
                 });
             } else {
-                toast.success("Sửa thất bại", {
+                toast.error("Sửa thất bại", {
                     position: "top-right",
                     autoClose: 4000,
                     hideProgressBar: true,
@@ -94,7 +93,6 @@ function EditNews() {
                 <nav>
                     <div className="sidebar-button" onClick={handleClickMenu}>
                         <GrMenu className="bx bx-menu sidebarBtn" />
-                        <span className="dashboard">Add Tour</span>
                     </div>
                     <div className="search-box">
                         <input type="text" placeholder="Search..." />

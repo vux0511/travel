@@ -13,19 +13,25 @@ import InternationalStudentPage from "./pages/InternationalStudentPage";
 import AdminPage from "./components/Admin/Admin";
 import EditTour from "./components/Admin/Tour/EditTour";
 import EditNews from "./components/Admin/News/EditNews";
+import EditTravelTicket from "./components/Admin/TravelTicket/EditTravelTicket";
 import EditReview from "./components/Admin/Review/EditReview";
 import AddTour from "./components/Admin/Tour/AddTour";
 import ViewTour from "./components/Admin/Tour/ViewTour";
+import ViewTravelTicket from "./components/Admin/TravelTicket/ViewTravelTicket";
 import ViewReview from "./components/Admin/Review/ViewReview";
 import ViewNews from "./components/Admin/News/ViewNews";
 import AddNews from "./components/Admin/News/AddNews";
+import AddTravelTicket from "./components/Admin/TravelTicket/AddTravelTicket";
 import FlowerPage from "./pages/FlowerPage";
 import LoginAdmin from "./components/Admin/LoginAdmin";
 import ContactPage from "./pages/ContactPage";
 import NewsPage from "./pages/NewsPage";
 import DetailNewsPage from "./pages/DetailNewsPage";
+import DetailTravelTicketPage from "./pages/DetailTravelTicketPage";
 import EventsPage from "./pages/EventsPage";
 import ReviewPage from "./pages/ReviewPage";
+import TravelTicket from "./pages/TravelTicketPage";
+import AirlineTicketPage from "./pages/AirlineTicketPage";
 
 function App() {
     return (
@@ -35,7 +41,15 @@ function App() {
                 <Route path="/admin" element={<AdminPage />} />
                 <Route path="/admin/login" element={<LoginAdmin />} />
                 <Route path="/admin/tour/add" element={<AddTour />} />
+                <Route
+                    path="/admin/travelticket/view"
+                    element={<ViewTravelTicket />}
+                />
                 <Route path="/admin/news/add" element={<AddNews />} />
+                <Route
+                    path="/admin/travelticket/add"
+                    element={<AddTravelTicket />}
+                />
                 <Route path="/admin/tour/view" element={<ViewTour />} />
                 <Route path="/admin/news/view" element={<ViewNews />} />
                 <Route path="/admin/review/view" element={<ViewReview />} />
@@ -45,6 +59,10 @@ function App() {
                     element={<EditReview />}
                 />
                 <Route path="/admin/news/edit/:idNews" element={<EditNews />} />
+                <Route
+                    path="/admin/travelticket/edit/:idTravelTicket"
+                    element={<EditTravelTicket />}
+                />
                 <Route path="/tour-trong-nuoc" element={<TourInVietNam />} />
                 <Route
                     path="/tour-trong-nuoc/category/:idCategory"
@@ -78,6 +96,10 @@ function App() {
                     path="/tin-tuc/chi-tiet-bai-viet/idNews/:idNews"
                     element={<DetailNewsPage />}
                 />
+                <Route
+                    path="/ve-tham-quan-du-lich/chi-tiet/idTravelTicket/:idTravelTicket"
+                    element={<DetailTravelTicketPage />}
+                />
                 <Route path="/events" element={<EventsPage />} />
                 <Route
                     path="/dat-ve-may-bay"
@@ -87,13 +109,10 @@ function App() {
                     path="/dat-phong-khach-san"
                     element={<InternationalStudentPage />}
                 />
-                <Route
-                    path="/ve-may-bay"
-                    element={<InternationalStudentPage />}
-                />
+                <Route path="/ve-may-bay" element={<AirlineTicketPage />} />
                 <Route
                     path="/ve-tham-quan-du-lich"
-                    element={<InternationalStudentPage />}
+                    element={<TravelTicket />}
                 />
                 <Route
                     path="/ve-combo"

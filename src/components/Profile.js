@@ -9,7 +9,7 @@ function Profile() {
                 className="teambuilding__banner"
             />
 
-            <section className="container teambuilding">
+            <section className="container teambuilding profile">
                 <div className="visa__title visa__line teambuilding__title">
                     HỒ SƠ NĂNG LỰC CỦA DINGDING TRAVEL
                 </div>
@@ -86,20 +86,17 @@ function Profile() {
                                     lại ở việc tiếp thu kiến thức trên giảng
                                     đường, mà còn là những buổi học ngoại khóa,
                                     những buổi tham quan doanh nghiệp, dã ngoại
-                                    để các em sinh viên không chỉ được tham quan
-                                    du lịch truyền thống mà còn có thể tiếp xúc
-                                    với môi trường nghề nghiệp tương lai: Các
-                                    công ty, trường đại học, viện nghiên cứu,
-                                    cũng như gặp gỡ, trò chuyện về kinh nghiệm
-                                    với các chuyên gia, cựu sinh viên đã thành
-                                    công trong nghề nghiệp , từ đó vận dụng
-                                    những kiến thức đã học vào thực tế củng cố
-                                    lòng yêu nghành, yêu nghề học hỏi thêm nhiều
-                                    kỹ năng mềm bổ ích, đúc kết kinh nghiệm cần
-                                    thiết trước khi ra trường và tìm kiếm việc
-                                    làm.
+                                    để sinh viên có thể tiếp xúc với môi trường
+                                    nghề nghiệp tương lai: Các công ty, trường
+                                    đại học, viện nghiên cứu, cũng như gặp gỡ,
+                                    trò chuyện về kinh nghiệm với các chuyên
+                                    gia, cựu sinh viên đã thành công trong nghề
+                                    nghiệp , từ đó vận dụng những kiến thức đã
+                                    học vào thực tế củng cố lòng yêu nghành, yêu
+                                    nghề, trau dồi thêm nhiều kỹ năng mềm bổ
+                                    ích, đúc kết kinh nghiệm cần thiết trước khi
+                                    ra trường và tìm kiếm việc làm.
                                 </p>
-
                                 <p>
                                     <FaArrowRightLong className="profile__icon" />
                                     Kết hợp hoạt động team building nhẹ nhàng
